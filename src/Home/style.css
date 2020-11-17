@@ -23,12 +23,13 @@
 }
 .btn {
   color: #ffffff;
-  padding: 8px 20px;
+  padding: 18px 48px;
   border: 1px solid #0d0638;
   border-radius: 10px;
   background-color: #0d0638;
   font-weight: 700;
   font-size: 3vw;
+  cursor: pointer;
 }
 @media only screen and (min-width: 992px) {
   .home {
