@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Header from './Home/index.jsx';
+import Header from './Header/index.jsx';
 import './style.css';
 import './index.html';
 
