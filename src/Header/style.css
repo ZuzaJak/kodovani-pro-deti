@@ -17,18 +17,18 @@
   align-items: center;
 }
 .title__heading {
-  font-size: 4vw;
+  font-size: 25px;
   color: #0d0638;
   font-weight: 900;
 }
 .btn {
   color: #ffffff;
-  padding: 18px 48px;
+  padding: 9px 15px;
   border: 1px solid #0d0638;
   border-radius: 10px;
   background-color: #0d0638;
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 15px;
   cursor: pointer;
   margin-bottom: 50px;
 }
@@ -43,7 +43,16 @@
     flex: 1 1 50%;
   }
   .btn {
-    font-size: 2vw;
+    font-size: 20px;
+    padding: 18px 30px;
     margin: 0;
+  }
+  .title__heading {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .title__heading {
+    font-size: 30px;
   }
 }

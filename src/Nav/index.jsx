@@ -6,6 +6,7 @@ const Nav = () => {
     <div className="navbar">
       <div className="navbar__left">{'<kódování pro děti/>'}</div>
       <div className="navbar__right">
+        <button className="navbar__right-btn"></button>
         <a className="navbar__right-item" href="#">
           o projektu
         </a>
