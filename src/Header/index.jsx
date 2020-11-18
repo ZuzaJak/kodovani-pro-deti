@@ -8,7 +8,7 @@ const Header = () => {
       <img className="title__img" src={title_img} alt="titulní obrázek" />
       <div className="title">
         <h1 className="title__heading">KÓDOVÁNÍ PRO DĚTI</h1>
-        <button className="btn">pojď to zkusit</button>
+        <button className="btn">pojď to zkusit ▶</button>
       </div>
     </div>
   );
