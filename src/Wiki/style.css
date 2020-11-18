@@ -1,88 +1,59 @@
-
-.header_nav {
-background: #0D0638;
-min-width: 1440px;
-height: 104px;
-
-}
-
 /* WIKI HEADER */
 .wiki {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
-
+  padding: 50px;
 }
-
-
-
 .wiki__content {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
-
+  margin-bottom: 50px;
 }
-
 .bracket {
-  font-family: "Roboto", sans-serif ;
+  font-family: 'Roboto', sans-serif;
   font-size: 160px;
-  color: #AA236D;
-  padding-left: 80px;
-  padding-top: 150px;
-  
-  }
-  
+  color: #aa236d;
+}
 .wiki__title-flex {
   display: flex;
+}
+.wiki__title-bracket-flex {
+  display: flex;
   flex-direction: column;
-
 }
-
 .wiki__title {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-font-family: 'Roboto', sans-serif;
-font: 30px;
-
-padding-left: 15px;
-padding-top: 160px;
-
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  font: 30px;
+  padding-left: 15px;
 }
-
-
 .wiki__title-text {
-font-family: "Roboto", sans-serif;
-font: 16px;
-padding-left: 15px;
-
+  font-family: 'Roboto', sans-serif;
+  font: 16px;
+  padding-left: 15px;
 }
-
-
-
-
+.wiki__sections {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .wiki__sections {
+    flex-direction: row;
+  }
+}
 .wiki__section {
-  display: block;
-  float: left;
   font-family: 'Press Start 2P', cursive;
   font-size: 16px;
-  padding-left: 40px;
-  margin: 0;
-
+  margin-right: 20px;
+  background-color: rgba(196, 196, 196, 0.15);
 }
-
-.wiki__content-section {
-display: flex;
-justify-content: left;
-flex-direction: column;
-
-
-}
-
 .wiki__section-text {
-  font-family: "Roboto", sans-serif ;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  padding-left: 80px;
-
-
+  line-height: 30px;
 }
