@@ -30,6 +30,7 @@
   font-weight: 700;
   font-size: 3vw;
   cursor: pointer;
+  margin-bottom: 50px;
 }
 @media only screen and (min-width: 992px) {
   .home {
@@ -43,5 +44,6 @@
   }
   .btn {
     font-size: 2vw;
+    margin: 0;
   }
 }
