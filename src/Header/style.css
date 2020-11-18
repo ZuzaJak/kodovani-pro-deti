@@ -32,9 +32,18 @@
   cursor: pointer;
   margin-bottom: 50px;
 }
+@media only screen and (min-width: 576px) {
+  .title__heading {
+    font-size: 30px;
+  }
+  .title__img {
+    width: 60%;
+  }
+}
 @media only screen and (min-width: 992px) {
   .home {
     flex-direction: row;
+    min-height: 100vh;
   }
   .title__img {
     width: 50%;
@@ -51,8 +60,8 @@
     font-size: 40px;
   }
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 1200px) {
   .title__heading {
-    font-size: 30px;
+    font-size: 55px;
   }
 }
