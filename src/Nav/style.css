@@ -11,11 +11,18 @@
 }
 .navbar__right-item {
   display: none;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
 }
 .navbar__right-item:hover,
 .navbar__right-item:active,
 .navbar__right-item:focus {
   text-decoration: underline;
+  transition: 0.4s;
 }
 .navbar__left {
   color: white;
@@ -24,7 +31,6 @@
   font-size: 10px;
 }
 .navbar__right-btn {
-  display: block;
   background-color: transparent;
   background-image: url(../img/menu-icon.svg);
   filter: invert(100%);
@@ -34,9 +40,17 @@
   height: 30px;
   border: none;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
-.navbar__right-btn:hover {
-  border: 1px solid white;
+.navbar__right-btn:hover,
+.navbar__right-btn:focus,
+.navbar__right-btn:active {
+  transform: scale(1.1);
 }
 @media only screen and (min-width: 768px) {
   .navbar__right-item {
