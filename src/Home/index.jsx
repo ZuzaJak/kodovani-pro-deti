@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import title_img from '../img/title.png';
 
-const Home = () => {
+const Header = () => {
   return (
     <div className="home">
       <img className="title__img" src={title_img} alt="titulní obrázek" />
@@ -13,4 +13,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default Header;
