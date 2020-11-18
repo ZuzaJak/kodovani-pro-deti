@@ -1,0 +1,88 @@
+
+.header_nav {
+background: #0D0638;
+min-width: 1440px;
+height: 104px;
+
+}
+
+/* WIKI HEADER */
+.wiki {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+
+
+
+.wiki__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+}
+
+.bracket {
+  font-family: "Roboto", sans-serif ;
+  font-size: 160px;
+  color: #AA236D;
+  padding-left: 80px;
+  padding-top: 150px;
+  
+  }
+  
+.wiki__title-flex {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.wiki__title {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+font-family: 'Roboto', sans-serif;
+font: 30px;
+
+padding-left: 15px;
+padding-top: 160px;
+
+}
+
+
+.wiki__title-text {
+font-family: "Roboto", sans-serif;
+font: 16px;
+padding-left: 15px;
+
+}
+
+
+
+
+.wiki__section {
+  display: block;
+  float: left;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  padding-left: 40px;
+  margin: 0;
+
+}
+
+.wiki__content-section {
+display: flex;
+justify-content: left;
+flex-direction: column;
+
+
+}
+
+.wiki__section-text {
+  font-family: "Roboto", sans-serif ;
+  font-size: 14px;
+  padding-left: 80px;
+
+
+}
