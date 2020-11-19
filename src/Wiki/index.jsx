@@ -1,10 +1,10 @@
 import React from 'react';
 import WikiContentHead from './components/WikiContentHead/index.jsx';
 import WikiContentSection from './components/WikiContentSection/index.jsx';
-import snippet from '../img/snippet/Code_snippet_01.svg';
+import { snippet } from './components/WikiContentSection/index.jsx';
 import './style.css';
 
-const Wiki = () => {
+const Wiki = ({ snippet }) => {
   return (
     <>
       <main>

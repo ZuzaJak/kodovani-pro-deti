@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
 
-
 const WikiContentHead = () => {
   return (
     <div className="wiki">
@@ -9,21 +8,23 @@ const WikiContentHead = () => {
         <div className="wiki__title-flex">
           <span className="bracket"> {'{'}</span>
           <div className="wiki__title-bracket-flex">
-            <h1 className="wiki__title">LOREM IPSUM</h1>
+            <h1 className="wiki__title">Jak se tvoří webové stránky?</h1>
             <p className="wiki__title-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
+              Webové stránky nejsou jen to, co na první pohled vidíme (obrázky,
+              barvy, písmena, tlačítka), za každou webovou stránkou se skrývá
+              “kód”. Kód je speciální způsob, jakým se tvoří a píší webové
+              stránky. Webové stránky si můžeme prohlížet v takzvaném webovém
+              prohlížeči. Každý ho jistě zná, je to to “tlačítko pro internet”
+              🙂. Webový prohlížeč dokáže přečíst kód, který někdo napsal, a
+              vytvoří z něho webovou stránku, která je pěkná a přehledná. V
+              následujících částech se dozvíte, jak vypadá takový kód, kterým se
+              píší webové stránky.
             </p>
           </div>
         </div>
       </div>
     </div>
-      );
+  );
 };
 
 export default WikiContentHead;

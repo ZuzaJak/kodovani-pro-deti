@@ -9,13 +9,11 @@ const WikiContentSection = (props) => {
         <h2 className="wiki__section-header">&lt;HTML&gt; </h2>
         <h3 className="wiki_section_subHeader">LOREM IPSUM</h3>
         <p className="wiki__section-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          Je to zkratka z anglického "Hypertext Markup Language", česky říkáme
+          značkovací jazyk. HTML je taková kostra webové stránky. Skládá se z
+          takzvaných tagů (značek), které se píší pomocí špičatých závorek
+          {'<>'}. Tagů je velké množství, na této stránce si ukážeme ty základní
+          a nejdůležitější.
         </p>
       </div>
       <div className="wiki__section">
