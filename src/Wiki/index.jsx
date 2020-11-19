@@ -4,14 +4,14 @@ import WikiContentSection from './components/WikiContentSection/index.jsx';
 import { snippet } from './components/WikiContentSection/index.jsx';
 import './style.css';
 
-const Wiki = ({ snippet }) => {
+const Wiki = () => {
   return (
-    <>
+    <div id="wiki">
       <main>
         <WikiContentHead />
         <WikiContentSection snippet />
       </main>
-    </>
+    </div>
   );
 };
 

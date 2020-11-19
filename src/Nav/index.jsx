@@ -10,7 +10,7 @@ const Nav = () => {
         <a className="navbar__right-item" href="#">
           o projektu
         </a>
-        <a className="navbar__right-item" href="#">
+        <a className="navbar__right-item" href="#wiki">
           kódovací wikipedie
         </a>
         <a className="navbar__right-item" href="#">
