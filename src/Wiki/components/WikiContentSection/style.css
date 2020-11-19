@@ -1,0 +1,47 @@
+/* WIKI HEADER */
+
+
+.wiki__sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wiki__section {
+  padding: 70px;
+}
+
+.wiki_section_subHeader {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+@media only screen and (min-width: 992px) {
+
+  .wiki__sections {
+    flex-direction: row;
+  }
+}
+.wiki__section {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  padding: 20px;
+  background-color: rgba(196, 196, 196, 0.15);
+}
+
+.wiki__section-header {
+color: #aa236d;
+}
+
+.wiki__section-text {
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 10 20;
+}
+
+.title__img {
+min-width: 400px;
+}
+
