@@ -1,6 +1,6 @@
 import React from 'react';
-import snippet from '../../../img/snippet/Code_snippet_01.svg';
 import './style.css';
+import snippet from '../../../img/snippet/Code_snippet_01.svg';
 
 const WikiContentSection = (props) => {
   return (
@@ -17,18 +17,10 @@ const WikiContentSection = (props) => {
         </p>
       </div>
       <div className="wiki__section">
-        <img
-          src={props.snippet}
-          className="wiki__snippet"
-          alt="obrazek HTML kod"
-        />
+        <img src={snippet} className="wiki__snippet" alt="obrazek HTML kod" />
       </div>
       <div className="wiki__section">
-        <img
-          src={props.snippet}
-          className="wiki__snippet"
-          alt="obrazek HTML kod"
-        />
+        <img src={snippet} className="wiki__snippet" alt="obrazek HTML kod" />
       </div>
     </div>
   );
