@@ -32,7 +32,7 @@ const Nav = () => {
               onSelect={handleHamMenu}
             />
             <HamMenu href="#" text="vyzkoušej to" onSelect={handleHamMenu} />
-            <HamMenu href="#" text="kam dál" onSelect={handleHamMenu} />
+            <HamMenu href="#links" text="kam dál" onSelect={handleHamMenu} />
           </div>
           <a className="navbar__right-item" href="#about">
             o projektu
@@ -43,7 +43,7 @@ const Nav = () => {
           <a className="navbar__right-item" href="#">
             vyzkoušej to
           </a>
-          <a className="navbar__right-item" href="#">
+          <a className="navbar__right-item" href="#links">
             kam dál
           </a>
         </div>

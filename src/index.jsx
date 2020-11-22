@@ -4,6 +4,7 @@ import Header from './Header/header.jsx';
 import About from './About/about.jsx';
 import Wiki from './Wiki/wiki.jsx';
 import Nav from './Nav/nav.jsx';
+import Links from './Links/links.jsx';
 import './style.css';
 import './index.html';
 
@@ -13,6 +14,7 @@ const App = () => (
     <Header />
     <About />
     <Wiki />
+    <Links />
   </>
 );
 render(<App />, document.querySelector('#app'));
