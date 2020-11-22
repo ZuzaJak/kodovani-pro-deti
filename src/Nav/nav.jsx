@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './nav.css';
 
-const MenuItem = (props) => {
+const HamMenu = ({ href, onSelect, text }) => {
   return (
-    <a href={props.href} className="menu-item" onClick={props.onSelect}>
-      {props.text}
+    <a href={href} className="menu-item" onClick={onSelect}>
+      {text}
     </a>
   );
 };
@@ -12,7 +12,7 @@ const MenuItem = (props) => {
 const Nav = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
-  const handleSelectItem = () => {
+  const handleHamMenu = () => {
     setMenuOpened(false);
   };
   return (
@@ -24,23 +24,15 @@ const Nav = () => {
             className="menu__btn"
             onClick={() => setMenuOpened(true)}
           ></button>
-          <div className="menu__items" onMouseLeave={handleSelectItem}>
-            <MenuItem
-              href="#about"
-              text="o projektu"
-              onSelect={handleSelectItem}
-            />
-            <MenuItem
+          <div className="menu__items" onMouseLeave={handleHamMenu}>
+            <HamMenu href="#about" text="o projektu" onSelect={handleHamMenu} />
+            <HamMenu
               href="#wiki"
               text="kódovací wikipedie"
-              onSelect={handleSelectItem}
+              onSelect={handleHamMenu}
             />
-            <MenuItem
-              href="#"
-              text="vyzkoušej to"
-              onSelect={handleSelectItem}
-            />
-            <MenuItem href="#" text="kam dál" onSelect={handleSelectItem} />
+            <HamMenu href="#" text="vyzkoušej to" onSelect={handleHamMenu} />
+            <HamMenu href="#" text="kam dál" onSelect={handleHamMenu} />
           </div>
           <a className="navbar__right-item" href="#about">
             o projektu
