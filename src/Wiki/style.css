@@ -32,12 +32,10 @@
   flex-wrap: wrap;
   font-family: 'Roboto', sans-serif;
   font: 30px;
-  padding-left: 15px;
 }
 .wiki__title-text {
   font-family: 'Roboto', sans-serif;
   font: 16px;
-  padding-left: 15px;
 }
 .wiki__sections {
   display: flex;
@@ -53,12 +51,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
-
 @media only screen and (min-width: 992px) {
-
-.wiki {
-  padding: 50px;
-}
+  .wiki {
+    padding: 50px;
+  }
 
   .wiki__sections {
     flex-direction: row;
@@ -72,7 +68,7 @@
 }
 
 .wiki__section-header {
-color: #aa236d;
+  color: #aa236d;
 }
 
 .wiki__section-text {
@@ -84,6 +80,5 @@ color: #aa236d;
 }
 
 .title__img {
-min-width: 400px;
+  min-width: 400px;
 }
-

@@ -1,5 +1,4 @@
-/* WIKI HEADER */
-
+/* WIKI content section */
 
 .wiki__sections {
   display: flex;
@@ -15,9 +14,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-
 @media only screen and (min-width: 992px) {
-
   .wiki__sections {
     flex-direction: row;
   }
@@ -30,7 +27,7 @@
 }
 
 .wiki__section-header {
-color: #aa236d;
+  color: #aa236d;
 }
 
 .wiki__section-text {
@@ -42,6 +39,5 @@ color: #aa236d;
 }
 
 .title__img {
-min-width: 400px;
+  min-width: 400px;
 }
-

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css';
+import './nav.css';
 
 const MenuItem = (props) => {
   return (

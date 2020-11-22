@@ -1,6 +1,6 @@
 import React from 'react';
-import WikiContentHead from './components/WikiContentHead/index.jsx';
-import WikiContentSection from './components/WikiContentSection/index.jsx';
+import WikiContentHead from './components/WikiContentHead/wiki_head.jsx';
+import WikiContentSection from './components/WikiContentSection/wiki_section.jsx';
 // import snippet from './components/WikiContentSection/index.jsx';
 
 import './style.css';

@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Header from './Header/index.jsx';
-import Wiki from './Wiki/index.jsx';
-import Nav from './Nav/index.jsx';
-
+import Header from './Header/header.jsx';
+import About from './About/about.jsx';
+import Wiki from './Wiki/wiki.jsx';
+import Nav from './Nav/nav.jsx';
 import './style.css';
 import './index.html';
 
@@ -11,6 +11,7 @@ const App = () => (
   <>
     <Nav />
     <Header />
+    <About />
     <Wiki />
   </>
 );

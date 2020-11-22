@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './wiki_section.css';
 import snippet from '../../../img/snippet/Code_snippet_01.svg';
 
 const WikiContentSection = (props) => {

@@ -1,0 +1,7 @@
+.about__title-flex {
+  display: flex;
+  padding: 50px;
+}
+.bracket {
+  margin-right: 20px;
+}

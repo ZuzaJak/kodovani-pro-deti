@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './wiki_head.css';
 
 const WikiContentHead = () => {
   return (
