@@ -22,6 +22,11 @@ const About = () => {
           </p>
         </div>
       </div>
+      <div className="about__columns-flex">
+        <div className="about__columns"></div>
+        <div className="about__columns"></div>
+        <div className="about__columns"></div>
+      </div>
     </div>
   );
 };
