@@ -24,7 +24,7 @@ const Nav = () => {
             className="menu__btn"
             onClick={() => setMenuOpened(true)}
           ></button>
-          <div className="menu__items">
+          <div className="menu__items" onMouseLeave={handleSelectItem}>
             <MenuItem href="#" text="o projektu" onSelect={handleSelectItem} />
             <MenuItem
               href="#wiki"
