@@ -22,6 +22,9 @@
   display: flex;
   flex-direction: column;
 }
+.links__list a {
+  color: #aa236d;
+}
 .links__img {
   width: 80%;
   margin: 30px;
