@@ -5,3 +5,30 @@
 .bracket {
   margin-right: 20px;
 }
+.about__columns-flex {
+  display: flex;
+  flex-direction: column;
+}
+.about__column {
+  background-color: rgba(196, 196, 196, 0.15);
+  padding: 20px;
+  margin: 20px;
+  line-height: 30px;
+}
+.about__column > p {
+  line-height: 30px;
+}
+.about__column > h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+@media only screen and (min-width: 992px) {
+  .about__columns-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .about__column {
+    flex: 1 1 25%;
+    margin: 20px;
+  }
+}

@@ -25,7 +25,11 @@ const Nav = () => {
             onClick={() => setMenuOpened(true)}
           ></button>
           <div className="menu__items" onMouseLeave={handleSelectItem}>
-            <MenuItem href="#" text="o projektu" onSelect={handleSelectItem} />
+            <MenuItem
+              href="#about"
+              text="o projektu"
+              onSelect={handleSelectItem}
+            />
             <MenuItem
               href="#wiki"
               text="kódovací wikipedie"
@@ -38,7 +42,7 @@ const Nav = () => {
             />
             <MenuItem href="#" text="kam dál" onSelect={handleSelectItem} />
           </div>
-          <a className="navbar__right-item" href="#">
+          <a className="navbar__right-item" href="#about">
             o projektu
           </a>
           <a className="navbar__right-item" href="#wiki">
