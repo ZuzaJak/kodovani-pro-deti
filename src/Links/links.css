@@ -28,7 +28,18 @@
 .links__img {
   width: 80%;
   margin: 30px;
+
 }
+
+.icon_link_out {
+  display: inline-block;
+  margin: 0px 8px;
+  width: 14px;
+  height: auto;
+ 
+}
+
+
 @media only screen and (min-width: 992px) {
   .links__list-flex {
     display: flex;

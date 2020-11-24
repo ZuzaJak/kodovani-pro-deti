@@ -1,6 +1,8 @@
 import React from 'react';
 import './links.css';
 import links from '../img/links.png';
+import icon from '../img/icon/link_out_icon.png';
+
 
 const Links = () => {
   return (
@@ -29,16 +31,18 @@ const Links = () => {
             <h2>více učení</h2>
             <a
               href="https://www.czechitas.cz/cs/co-delame/czechitas-nova-generace"
-              target="_blank"
-            >
+              target="_blank">
               Czechitas Nová Generace
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
             <a href="https://witches.fel.cvut.cz/" target="_blank">
               wITches
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
 
             <a href="https://www.imysleni.cz/" target="_blank">
               iMYŠLENÍ.cz
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
           </div>
           <div className="links__list">
@@ -48,21 +52,26 @@ const Links = () => {
               target="_blank"
             >
               Datová Lhota - v počítači to žije!
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
             <a href="https://scratch.mit.edu/" target="_blank">
               SCRATCH
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
             <a href="https://code.org/" target="_blank">
               code.org
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
             <a href="https://flexboxfroggy.com/#cs" target="_blank">
               Flexbox Froggy
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
           </div>
           <div className="links__list">
             <h2>a něco v angličtině</h2>
             <a href="https://eraseallkittens.com/" target="_blank">
               Erase All Kittens
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
           </div>
         </div>
