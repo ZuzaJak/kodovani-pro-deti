@@ -17,7 +17,18 @@ const WikiContentSection = (props) => {
         </p>
       </div>
       <div className="wiki__section">
-        <img src={snippet} className="wiki__snippet" alt="obrazek HTML kod" />
+      <div className="wiki__section-border">
+        <p className="wiki__section-snippet">
+        {'<!DOCTYPE html>'}<br/>
+        {'<html lang=”cs">'}<br/>
+        {'<head>'}<br/>
+        {' <title>Ahoj, já jsem začátek.</title>'}<br/>
+        {'</head>'}<br/>
+        {'<body>'}<br/>
+        {'</body>'}<br/>
+        {'</html>'}<br/>
+        </p>
+      </div>
       </div>
       <div className="wiki__section">
         <img src={snippet} className="wiki__snippet" alt="obrazek HTML kod" />

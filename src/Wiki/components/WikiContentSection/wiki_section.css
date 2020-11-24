@@ -4,10 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(196, 196, 196, 0.5);
 }
 
 .wiki__section {
   padding: 70px;
+
 }
 
 .wiki_section_subHeader {
@@ -23,7 +25,20 @@
   font-family: 'Press Start 2P', cursive;
   font-size: 16px;
   padding: 20px;
-  background-color: rgba(196, 196, 196, 0.15);
+  
+}
+
+.wiki__section-border {
+ border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.wiki__section-snippet {
+font-family:'Roboto', sans-serif ;
+width: 221px;
+
+
 }
 
 .wiki__section-header {
