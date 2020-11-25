@@ -1,6 +1,6 @@
 import React from 'react';
 import './wiki_section.css';
-import snippet from '../../../img/snippet/Code_snippet_01.svg';
+import snippet from '../../../img/snippet/Code_snippet_01.png';
 
 
 const WikiContentSection = (props) => {
@@ -23,9 +23,9 @@ const WikiContentSection = (props) => {
         {'<!DOCTYPE html>'}<br/>
         {'<html lang=”cs">'}<br/>
         {'<head>'}<br/>
-        {' <title>Ahoj, já jsem začátek.</title>'}<br/>
+        {' <title>Ahoj!</title>'}<br/>
         {'</head>'}<br/>
-        {'<body>'}<br/>
+        {'<body>'}<br/><br/>
         {'</body>'}<br/>
         {'</html>'}<br/>
         </p>

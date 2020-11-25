@@ -6,12 +6,12 @@ import Typography from '@material-ui/core/Typography';
 
 const images = [
   {
-    url: '../../img/wiki_navigation/wiki_HTML.jpg',
+    url: '/wiki_navigation/wiki_HTML.jpg',
     title: 'HTML',
     width: '50%',
   },
   {
-    url: '../../img/wiki_navigation/wiki_CSS.jpg',
+    url: '/wiki_navigation/wiki_CSS.jpg',
     title: 'CSS',
     width: '50%',
   },
