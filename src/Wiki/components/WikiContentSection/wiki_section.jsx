@@ -23,7 +23,7 @@ const WikiContentSection = (props) => {
         {'<!DOCTYPE html>'}<br/>
         {'<html lang=”cs">'}<br/>
         {'<head>'}<br/>
-        {' <title>Ahoj!</title>'}<br/>
+        {' <title>Ahoj, já jsem název stránky</title>'}<br/>
         {'</head>'}<br/>
         {'<body>'}<br/><br/>
         {'</body>'}<br/>
