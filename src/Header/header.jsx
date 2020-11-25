@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-import title_img from '../img/title.png';
+import title_img from '../img/title.svg';
 
 const Header = () => {
   return (
