@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 import title_img from '../img/title.svg';
-import { Button }  from './components/Button.jsx'
+import  Button   from './components/Button.jsx'
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
       <div className="title">
         <h1 className="title__heading">KÓDOVÁNÍ PRO DĚTI</h1>
       </div>
-       <ContainedButtons />
+       <Button />
       </div>
     </>
   );
