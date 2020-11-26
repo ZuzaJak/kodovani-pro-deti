@@ -4,14 +4,16 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
 
+
+
 const images = [
   {
-    url: '/wiki_navigation/wiki_HTML.jpg',
+    url: '/static/images/grid-list/breakfast.jpg',
     title: 'HTML',
     width: '50%',
   },
   {
-    url: '/wiki_navigation/wiki_CSS.jpg',
+    url: '/static/images/grid-list/breakfast.jpg',
     title: 'CSS',
     width: '50%',
   },
@@ -27,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
   },
   image: {
+ 
     position: 'relative',
     height: 200,
     [theme.breakpoints.down('xs')]: {

@@ -7,6 +7,7 @@ import WikiContentNavigation from './components/WikiContentNAvigation/wiki_navig
 
 const Wiki = () => {
   return (
+    <>
     <div id="wiki">
       <main>
         <WikiContentHead />
@@ -15,6 +16,7 @@ const Wiki = () => {
         <WikiContentSection /* snippet={snippet} */ />
       </main>
     </div>
+    </>
   );
 };
 
