@@ -3,14 +3,13 @@ import './links.css';
 import links from '../img/links.png';
 import icon from '../img/icon/link_out_icon.png';
 
-
 const Links = () => {
   return (
     <div id="links" className="links">
       <div className="links__title-flex">
         <span className="bracket"> {'{'}</span>{' '}
         <div className="links__title-bracket-flex">
-          <h1 className="links__title">Kam dál?</h1>
+          <h1 className="links__title">kam dál?</h1>
           <p className="links__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At corrupti
             temporibus aliquam est vel mollitia alias laudantium asperiores nemo
@@ -31,7 +30,8 @@ const Links = () => {
             <h2>více učení</h2>
             <a
               href="https://www.czechitas.cz/cs/co-delame/czechitas-nova-generace"
-              target="_blank">
+              target="_blank"
+            >
               Czechitas Nová Generace
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
