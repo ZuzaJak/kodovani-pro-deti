@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     top: 0,
     bottom: 0,
     backgroundColor: theme.palette.common.black,
-    opacity: 0.4,
+    opacity: 0.6,
     transition: theme.transitions.create('opacity'),
   },
   imageTitle: {
@@ -121,7 +121,7 @@ export default function ButtonBases() {
           <span className={classes.imageButton}>
             <Typography
               component="span"
-              variant="subtitle1"
+              variant="h3"
               color="inherit"
               className={classes.imageTitle}
             >
