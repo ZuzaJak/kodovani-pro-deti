@@ -1,12 +1,18 @@
 .links {
   padding-top: 100px;
 }
+.links__text {
+  width: 50%;
+  line-height: 30px;
+}
 .links__title-flex {
   display: flex;
   padding: 50px;
 }
-.bracket {
+.links__title-flex > .bracket {
   margin-right: 20px;
+  font-size: 200px;
+  color: #aa236d;
 }
 .links__list-flex {
   display: flex;
@@ -28,7 +34,6 @@
 .links__img {
   width: 80%;
   margin: 30px;
-
 }
 
 .icon_link_out {
@@ -36,9 +41,7 @@
   margin: 0px 8px;
   width: 14px;
   height: auto;
- 
 }
-
 
 @media only screen and (min-width: 992px) {
   .links__list-flex {

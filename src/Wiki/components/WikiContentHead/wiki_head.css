@@ -16,10 +16,11 @@
   display: flex;
 }
 
-.bracket {
+.wiki__title-flex > .bracket {
   font-family: 'Roboto', sans-serif;
   font-size: 200px;
   color: #aa236d;
+  margin-right: 20px;
 }
 
 .wiki__title-bracket-flex {

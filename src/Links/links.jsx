@@ -11,16 +11,10 @@ const Links = () => {
         <div className="links__title-bracket-flex">
           <h1 className="links__title">kam dál?</h1>
           <p className="links__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At corrupti
-            temporibus aliquam est vel mollitia alias laudantium asperiores nemo
-            neque nisi veniam, adipisci ut, distinctio ipsum deserunt cum
-            consectetur. Et? Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Nemo facere fugiat et nihil, tempore eos excepturi odio aut
-            eveniet corporis. Porro asperiores nostrum nobis repellat, impedit
-            quos culpa nihil veniam. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Nesciunt alias asperiores nam cum ipsa provident!
-            Nulla, qui facere, optio modi aut consequuntur nesciunt asperiores
-            similique nisi expedita consequatur voluptatem repellat.
+            Jestli tě tvorba webu zaujala, uč se dál, ať jsi jednou mistrem!
+            Tady najdeš spoustu odkazů, které tě dovedou na různé stránky. Pokud
+            máš zájem o více učení, více her a zábavy, či se nezalekneš ani
+            odkazů a her v angličtině, jsi tu správně!
           </p>
         </div>
       </div>

@@ -5,8 +5,10 @@
   display: flex;
   padding: 50px;
 }
-.bracket {
+.about__title-flex > .bracket {
   margin-right: 20px;
+  font-size: 200px;
+  color: #aa236d;
 }
 .about__columns-flex {
   display: flex;
@@ -24,6 +26,12 @@
 .about__column > h2 {
   font-weight: 700;
   font-size: 24px;
+}
+@media only screen and (min-width: 576px) {
+  .about__title-flex > .bracket {
+    margin-right: 20px;
+    font-size: 150px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .about__columns-flex {
