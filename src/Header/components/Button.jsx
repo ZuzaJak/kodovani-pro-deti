@@ -10,6 +10,8 @@ root: {
   padding: "0 50px",
   border: "none",
   borderRadius: 3,
+  margin: "30px",
+ 
 }
 
 }))
@@ -22,13 +24,14 @@ export default function ContainedButtons() {
       <Button
       classes={{
         root: classes.root
+        
       }}
       variant="contained"
       color="primary"
       href="#contained-buttons"
       >
         Pojď si zahrát
-      </Button>
+      </Button >
 
     </>
   );
