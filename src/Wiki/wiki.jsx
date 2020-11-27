@@ -6,6 +6,8 @@ import WikiContentSection from './components/WikiContentSection/wiki_section.jsx
 import WikiContentNavigation from './components/WikiContentNavigation/wiki_navigation.jsx';
 import { Button } from '@material-ui/core';
 
+import WikiContentTabPanel from "./components/WIkiContentTabPanel/WikiTabPanel.jsx";
+
 const Wiki = () => {
   return (
     <>
@@ -14,7 +16,9 @@ const Wiki = () => {
           <WikiContentHead />
           <WikiContentNavigation />
           <Button />
+          <WikiContentTabPanel />
           <WikiContentSection /* snippet={snippet} */ />
+          
         </main>
       </div>
     </>
