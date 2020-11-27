@@ -2,18 +2,18 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
-
-
+import wiki_picCSS from "./img/wiki_nav_CSS.svg";
+import wiki_picHTML from "./img/wiki_nav_HTML.svg";
 
 
 const images = [
   {
-    url: '/static/images/grid-list/breakfast.jpg',
+    url: wiki_picHTML,
     title: 'HTML',
     width: '50%',
   },
   {
-    url: '/static/images/grid-list/breakfast.jpg',
+    url: wiki_picCSS,
     title: 'CSS',
     width: '50%',
   },
