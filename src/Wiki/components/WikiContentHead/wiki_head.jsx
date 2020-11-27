@@ -8,7 +8,9 @@ const WikiContentHead = () => {
         <div className="wiki__title-flex">
           <span className="bracket"> {'{'}</span>
           <div className="wiki__title-bracket-flex">
-            <h1 className="wiki__title">Jak se tvoří webové stránky?</h1>
+            <h1 className="wiki__title">
+              kódovací wikipedie - jak se tvoří webové stránky?
+            </h1>
             <p className="wiki__title-text">
               Webové stránky nejsou jen to, co na první pohled vidíme (obrázky,
               barvy, písmena, tlačítka), za každou webovou stránkou se skrývá

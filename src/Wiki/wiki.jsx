@@ -9,14 +9,14 @@ import { Button } from '@material-ui/core';
 const Wiki = () => {
   return (
     <>
-    <div id="wiki">
-      <main>
-        <WikiContentHead />
-        <WikiContentNavigation />
-        <Button />
-        <WikiContentSection /* snippet={snippet} */ />
-      </main>
-    </div>
+      <div id="wiki">
+        <main>
+          <WikiContentHead />
+          <WikiContentNavigation />
+          <Button />
+          <WikiContentSection /* snippet={snippet} */ />
+        </main>
+      </div>
     </>
   );
 };
