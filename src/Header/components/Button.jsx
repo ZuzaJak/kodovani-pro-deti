@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
 root: {
@@ -19,20 +20,23 @@ root: {
 export default function ContainedButtons() {
   const classes = useStyles();
 
+  const LinkBtn = () => {
+    console.log ("funguju")
+
+
+  }
   return (
-    <>
+    <Link to="/vyzkousej-to">
       <Button
       classes={{
         root: classes.root
-        
       }}
       variant= "contained"
       color="primary"
-      href="#contained-buttons"
       >
         Pojď si zahrát
       </Button >
-
-    </>
+      </Link>
+    
   );
 }
