@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 
 const HamMenu = ({ href, onSelect, text }) => {
   return (
-    <a href={href} className="menu-item" onClick={onSelect}>
+    <Link to={href} className="menu-item" onClick={onSelect}>
       {text}
-    </a>
+    </Link>
   );
 };
 
@@ -28,18 +28,18 @@ const Nav = () => {
             onClick={() => setMenuOpened(true)}
           ></button>
           <div className="menu__items" onMouseLeave={handleHamMenu}>
-            <HamMenu href="#about" text="o projektu" onSelect={handleHamMenu} />
+            <HamMenu href="/index" text="o projektu" onSelect={handleHamMenu} />
             <HamMenu
-              href="#wiki"
+              href="/kodovaci-wikipedie"
               text="kódovací wikipedie"
               onSelect={handleHamMenu}
             />
             <HamMenu
-              href="#game"
+              href="/vyzkousej-to"
               text="vyzkoušej to"
               onSelect={handleHamMenu}
             />
-            <HamMenu href="#links" text="kam dál" onSelect={handleHamMenu} />
+            <HamMenu href="/kam-dal" text="kam dál" onSelect={handleHamMenu} />
           </div>
           <Link className="navbar__right-item" to="/index">
             o projektu

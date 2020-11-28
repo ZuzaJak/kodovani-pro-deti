@@ -26,6 +26,9 @@ const App = () => (
       <Route path="/kam-dal">
         <LinksPage />
       </Route>
+      <Route path="/">
+        <HomePage />
+      </Route>
     </Switch>
     <Footer />
   </Router>

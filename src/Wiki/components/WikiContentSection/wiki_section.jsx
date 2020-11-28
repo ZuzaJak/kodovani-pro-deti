@@ -7,8 +7,8 @@ const WikiContentSection = (props) => {
   return (
     <div className="wiki__sections">
       <div className="wiki__section">
-        <h2 className="wiki__section-header">&lt;HTML&gt; </h2>
-        <h3 className="wiki_section_subHeader">značkovací jazyk</h3>
+        <h2 className="wiki__section-header">{props.header}</h2>
+        <h3 className="wiki_section_subHeader">{props.subHeader}</h3>
         <p className="wiki__section-text">
           Je to zkratka z anglického "Hypertext Markup Language", česky říkáme
           značkovací jazyk. HTML je taková kostra webové stránky. Skládá se z
