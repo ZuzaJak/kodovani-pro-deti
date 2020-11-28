@@ -46,14 +46,14 @@ const Game3 = () => {
             {'{ justify-content: center }'}
           </div>
         )}
-        {!usedFlex?.start && (
-          <div className="drag__game3 start" draggable onDragStart={drag}>
-            {'{ justify-content: flex-start }'}
+        {!usedFlex?.left && (
+          <div className="drag__game3 left" draggable onDragStart={drag}>
+            {'{ justify-content: left}'}
           </div>
         )}
-        {!usedFlex?.end && (
-          <div className="drag__game3 end" draggable onDragStart={drag}>
-            {'{ justify-content: flex-end }'}
+        {!usedFlex?.right && (
+          <div className="drag__game3 right" draggable onDragStart={drag}>
+            {'{ justify-content: right }'}
           </div>
         )}
       </div>
