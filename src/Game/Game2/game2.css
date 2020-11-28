@@ -5,6 +5,8 @@
   background-image: url('../../img/FIN_picture/frame/fin/background.svg');
   height: 60vh;
   position: relative;
+  background-size: cover;
+  background-position-x: center;
 }
 .game__quest2 {
   display: flex;
@@ -22,7 +24,7 @@
 .picture2 {
   width: 200px;
   position: absolute;
-  left: 500px;
+  left: 300px;
   top: 150px;
 }
 .picture3 {

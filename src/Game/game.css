@@ -1,3 +1,10 @@
+/* zobrazení hry pouze pro šířky nad 768px */
+@media only screen and (max-width: 768px) {
+  .game {
+    display: none;
+  }
+}
+
 .game {
   padding-top: 100px;
 }
