@@ -26,7 +26,7 @@ export default function ContainedButtons() {
         root: classes.root
         
       }}
-      variant="contained"
+      variant= "contained"
       color="primary"
       href="#contained-buttons"
       >

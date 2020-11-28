@@ -1,22 +1,29 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Header from './Header/header.jsx';
-import About from './About/about.jsx';
-import Wiki from './Wiki/wiki.jsx';
-import Nav from './Nav/nav.jsx';
-import Links from './Links/links.jsx';
-import Footer from './Footer/footer.jsx';
-import './style.css';
-import './index.html';
+import HomePage from './Pages/HomePage.jsx'
+import WikiPage from './Pages/WikiPage.jsx';
+import LinksPage from './Pages/LinksPage.jsx';
+import Nav from "./Nav/nav.jsx";
+import Footer from "./Footer/footer.jsx";
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import style from "./style.css"
+import index from "./index.html"
 
 const App = () => (
-  <>
+    <Router>
     <Nav />
-    <Header />
-    <About />
-    <Wiki />
-    <Links />
+    <Switch>
+      <Route path="/index">
+        <HomePage />
+      </Route>
+      <Route path="/kodovaci-wikipedie">
+        <WikiPage />
+      </Route>
+      <Route path="/kam-dal">
+        <LinksPage />
+      </Route>
+    </Switch>
     <Footer />
-  </>
+  </Router>
 );
 render(<App />, document.querySelector('#app'));
