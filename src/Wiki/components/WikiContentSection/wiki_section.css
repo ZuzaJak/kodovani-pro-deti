@@ -8,7 +8,13 @@
   margin: 20px;
 }
 .wiki__section {
+  font-family: 'Noto Sans', cursive;
   padding: 70px;
+}
+
+.wiki__section-header {
+font-family: "Press Start 2P", sans-serif;
+
 }
 .wiki_section_subHeader {
   font-family: 'Roboto', sans-serif;
@@ -19,7 +25,7 @@
   }
 }
 .wiki__section {
-  font-family: 'Press Start 2P', cursive;
+
   font-size: 16px;
   padding: 20px;
 }

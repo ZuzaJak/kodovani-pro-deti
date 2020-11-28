@@ -4,7 +4,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 
 
 
-const WikiContentSection = (props) => {
+const WikiContentSection = (language) => (props) => {
   return (
     <div className="wiki__sections">
       <div className="wiki__section">
@@ -14,7 +14,7 @@ const WikiContentSection = (props) => {
       </div>
       <div className="wiki__section">
       <div className="wiki__section-border">
-      <SyntaxHighlighter language="html" >{props.snippetText}</SyntaxHighlighter>
+      <SyntaxHighlighter language={language} >{props.snippetText}</SyntaxHighlighter>
       </div>
       </div>
       <div className="wiki__section" dangerouslySetInnerHTML={{__html: props.snippetText}}>
@@ -23,4 +23,5 @@ const WikiContentSection = (props) => {
   );
 };
 
-export default WikiContentSection;
+export const HtmlWikiContentSection = WikiContentSection("html")
+export const CssWikiContentSection = WikiContentSection("css")
