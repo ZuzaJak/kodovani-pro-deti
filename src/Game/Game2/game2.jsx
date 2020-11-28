@@ -59,7 +59,7 @@ const Game2 = () => {
           </div>
         )}
       </div>
-      <div className="game2__pictures">
+      <div className="game2__background">
         <img
           src={picture1}
           alt="obrázek"

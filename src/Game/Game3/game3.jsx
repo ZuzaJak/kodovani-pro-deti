@@ -31,8 +31,8 @@ const Game3 = () => {
         {!flex ? (
           'Úkol 3: Pomocí vlastnosti justify-content přiměj jednorožce, aby létal před duhou (přetáhni obdélník se správným kódem na obrázek jednorožce).'
         ) : flex === 'center' ? (
-          <a className="game__next" href="#">
-            Hurá! Povedlo se ti to 😊 Splnil/a jsi všechny úkoly!
+          <a className="game__next" href="#game4">
+            Hurá! Povedlo se ti to 😊 Klikni TADY pro další úkol!
           </a>
         ) : (
           <a className="reload" href="#" onClick={reload}>
@@ -58,7 +58,7 @@ const Game3 = () => {
         )}
       </div>
       <div
-        className={`game3__pictures ${!!flex ? flex : ''}`}
+        className={`game3__background ${!!flex ? flex : ''}`}
         onDrop={drop}
         onDragOver={allowDrop}
       >

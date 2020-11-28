@@ -2,6 +2,7 @@ import React from 'react';
 import Game1 from './Game1/game1.jsx';
 import Game2 from './Game2/game2.jsx';
 import Game3 from './Game3/game3.jsx';
+import Game4 from './Game4/game4.jsx';
 import './game.css';
 
 const Game = () => {
@@ -17,6 +18,7 @@ const Game = () => {
       <Game1 />
       <Game2 />
       <Game3 />
+      <Game4 />
     </div>
   );
 };
