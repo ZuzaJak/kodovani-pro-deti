@@ -31,7 +31,11 @@ const Nav = () => {
               text="kódovací wikipedie"
               onSelect={handleHamMenu}
             />
-            <HamMenu href="#" text="vyzkoušej to" onSelect={handleHamMenu} />
+            <HamMenu
+              href="#game"
+              text="vyzkoušej to"
+              onSelect={handleHamMenu}
+            />
             <HamMenu href="#links" text="kam dál" onSelect={handleHamMenu} />
           </div>
           <a className="navbar__right-item" href="#about">
@@ -40,7 +44,7 @@ const Nav = () => {
           <a className="navbar__right-item" href="#wiki">
             kódovací wikipedie
           </a>
-          <a className="navbar__right-item" href="#">
+          <a className="navbar__right-item" href="#game">
             vyzkoušej to
           </a>
           <a className="navbar__right-item" href="#links">

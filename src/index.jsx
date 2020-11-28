@@ -4,6 +4,7 @@ import Header from './Header/header.jsx';
 import About from './About/about.jsx';
 import Wiki from './Wiki/wiki.jsx';
 import Nav from './Nav/nav.jsx';
+import Game from './Game/game.jsx';
 import Links from './Links/links.jsx';
 import Footer from './Footer/footer.jsx';
 import './style.css';
@@ -15,6 +16,7 @@ const App = () => (
     <Header />
     <About />
     <Wiki />
+    <Game />
     <Links />
     <Footer />
   </>

@@ -1,0 +1,49 @@
+.game {
+  padding-top: 100px;
+}
+.game__title-flex {
+  display: flex;
+  padding: 50px;
+}
+.game__title-flex > .bracket {
+  margin-right: 20px;
+  font-size: 100px;
+  color: #aa236d;
+}
+.game__quest {
+  display: flex;
+  justify-content: center;
+}
+.game__container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.game__container-options {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.drag {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  margin: 20px;
+}
+.blue {
+  background-color: #0d0638;
+}
+.pink {
+  background-color: #aa236d;
+}
+.yellow {
+  background-color: #fdff00;
+  color: black;
+}
+.image {
+  width: 90%;
+}
