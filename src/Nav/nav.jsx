@@ -47,9 +47,9 @@ const Nav = () => {
           <Link className="navbar__right-item" to="/kodovaci-wikipedie">
             kódovací wikipedie
           </Link>
-          <a className="navbar__right-item" to="#">
+          <Link className="navbar__right-item" to="/vyzkousej-to">
             vyzkoušej to
-          </a>
+          </Link>
           <Link className="navbar__right-item" to="/kam-dal">
             kam dál
           </Link>
