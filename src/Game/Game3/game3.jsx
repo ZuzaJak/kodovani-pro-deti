@@ -41,23 +41,21 @@ const Game3 = () => {
         )}
       </h2>
       <div className="game3__container">
-        <div className="game3__container-options">
-          {!usedFlex?.center && (
-            <div className="drag__game3 center" draggable onDragStart={drag}>
-              {'{justify-content: center}'}
-            </div>
-          )}
-          {!usedFlex?.start && (
-            <div className="drag__game3 start" draggable onDragStart={drag}>
-              {'{justify-content: flex-start}'}
-            </div>
-          )}
-          {!usedFlex?.end && (
-            <div className="drag__game3 end" draggable onDragStart={drag}>
-              {'{justify-content: flex-end}'}
-            </div>
-          )}
-        </div>
+        {!usedFlex?.center && (
+          <div className="drag__game3 center" draggable onDragStart={drag}>
+            {'{ justify-content: center }'}
+          </div>
+        )}
+        {!usedFlex?.start && (
+          <div className="drag__game3 start" draggable onDragStart={drag}>
+            {'{ justify-content: flex-start }'}
+          </div>
+        )}
+        {!usedFlex?.end && (
+          <div className="drag__game3 end" draggable onDragStart={drag}>
+            {'{ justify-content: flex-end }'}
+          </div>
+        )}
       </div>
       <div
         className={`game3__pictures ${!!flex ? flex : ''}`}

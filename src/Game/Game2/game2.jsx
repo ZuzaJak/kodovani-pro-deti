@@ -42,26 +42,24 @@ const Game2 = () => {
           </a>
         )}
       </h2>
-      <div className="game__container">
-        <div className="game__container-options">
-          {!usedBorders?.dotted && (
-            <div className="drag__game2 dotted" draggable onDragStart={drag}>
-              {'{border-style: dotted}'}
-            </div>
-          )}
-          {!usedBorders?.solid && (
-            <div className="drag__game2 solid" draggable onDragStart={drag}>
-              {'{border-style: solid}'}
-            </div>
-          )}
-          {!usedBorders?.dashed && (
-            <div className="drag__game2 dashed" draggable onDragStart={drag}>
-              {'{border-style: dashed}'}
-            </div>
-          )}
-        </div>
+      <div className="game2__container">
+        {!usedBorders?.dotted && (
+          <div className="drag__game2 dotted" draggable onDragStart={drag}>
+            {'{ border-style: dotted }'}
+          </div>
+        )}
+        {!usedBorders?.solid && (
+          <div className="drag__game2 solid" draggable onDragStart={drag}>
+            {'{ border-style: solid }'}
+          </div>
+        )}
+        {!usedBorders?.dashed && (
+          <div className="drag__game2 dashed" draggable onDragStart={drag}>
+            {'{ border-style: dashed }'}
+          </div>
+        )}
       </div>
-      <div className="game2__gallery">
+      <div className="game2__pictures">
         <img
           src={picture1}
           alt="obrázek"

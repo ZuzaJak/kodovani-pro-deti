@@ -7,20 +7,31 @@
   background-position-x: center;
   height: 70vh;
 }
+.game__quest3 {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+.game3__container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 .unicorn {
   width: 100px;
 }
-.game3__container-options {
-  width: 60%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
 .drag__game3 {
+  min-width: fit-content;
   background-color: #aa236d;
   border-radius: 5px;
   color: white;
   padding: 10px;
+  font-weight: 700;
+  margin: 20px;
 }
 .center {
   display: flex;

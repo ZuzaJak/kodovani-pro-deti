@@ -1,20 +1,17 @@
 /* game 1 - background color */
 .game__quest1 {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
-.game__container {
+.game1__container {
   width: 90%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: auto;
-}
-.game__container-options {
-  width: 60%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
+  flex-direction: row;
 }
 .drag__game1 {
   padding: 10px;
@@ -31,8 +28,8 @@
 }
 .yellow {
   background-color: #fdff00;
-  color: black;
+  color: #0d0638;
 }
 .image {
-  width: 90%;
+  width: 100%;
 }

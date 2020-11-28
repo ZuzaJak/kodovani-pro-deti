@@ -1,4 +1,4 @@
-.game2__gallery {
+.game2__pictures {
   width: 100%;
   height: 400px;
   padding-top: 200px;
@@ -11,9 +11,23 @@
 .game__quest2 {
   display: flex;
   justify-content: center;
+  width: 80%;
+  margin: auto;
 }
 .drag__game2 {
   color: #0d0638;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  margin: 20px;
+}
+.game2__container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .picture1 {
   width: 100px;

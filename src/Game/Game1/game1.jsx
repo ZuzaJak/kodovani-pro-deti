@@ -40,33 +40,31 @@ const Game1 = () => {
           </a>
         )}
       </h2>
-      <div className="game__container">
-        <div className="game__container-options">
-          {!usedColors?.blue && (
-            <div className="drag__game1 blue" draggable onDragStart={drag}>
-              {'{background-color: blue}'}
-            </div>
-          )}
-          {!usedColors?.pink && (
-            <div className="drag__game1 pink" draggable onDragStart={drag}>
-              {'{background-color: pink}'}
-            </div>
-          )}
-          {!usedColors?.yellow && (
-            <div className="drag__game1 yellow" draggable onDragStart={drag}>
-              {'{background-color: yellow}'}
-            </div>
-          )}
-        </div>
-
-        <img
-          src={space_image}
-          alt="space image"
-          className={`image ${!!color ? color : ''}`}
-          onDrop={drop}
-          onDragOver={allowDrop}
-        />
+      <div className="game1__container">
+        {!usedColors?.blue && (
+          <div className="drag__game1 blue" draggable onDragStart={drag}>
+            {'{ background-color: blue }'}
+          </div>
+        )}
+        {!usedColors?.pink && (
+          <div className="drag__game1 pink" draggable onDragStart={drag}>
+            {'{ background-color: pink }'}
+          </div>
+        )}
+        {!usedColors?.yellow && (
+          <div className="drag__game1 yellow" draggable onDragStart={drag}>
+            {'{ background-color: yellow }'}
+          </div>
+        )}
       </div>
+
+      <img
+        src={space_image}
+        alt="obrázek vesmíru"
+        className={`image ${!!color ? color : ''}`}
+        onDrop={drop}
+        onDragOver={allowDrop}
+      />
     </div>
   );
 };
