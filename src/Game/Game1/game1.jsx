@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './game1.css';
 import space_image from '../../img/FIN_picture/background/fin/background.svg';
 
@@ -31,9 +32,9 @@ const Game1 = () => {
         {!color ? (
           'Úkol 1: Obarvi pozadí vesmíru tmavě modrou barvou (přetáhni obdélník se správným kódem na obrázek).'
         ) : color === 'blue' ? (
-          <a className="game__next" href="#game2">
+          <Link className="game__next" to="/vyzkousej-to/2">
             Hurá! Povedlo se ti to 😊 Klikni TADY pro další hru!
-          </a>
+          </Link>
         ) : (
           <a className="reload" href="#" onClick={reload}>
             Modrou jsi netrefil/a, klikni tady pro další pokus!

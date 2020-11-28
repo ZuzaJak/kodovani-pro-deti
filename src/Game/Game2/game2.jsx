@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './game2.css';
 import picture1 from '../../img/FIN_picture/frame/fin/frame_01.svg';
 import picture2 from '../../img/FIN_picture/frame/fin/frame_02.svg';
@@ -33,9 +34,9 @@ const Game2 = () => {
         {!border ? (
           'Úkol 2: Přidej obrázkům tečkovaný rámeček (přetáhni obdélník se správným kódem na obrázky).'
         ) : border === 'dotted' ? (
-          <a className="game__next" href="#game3">
+          <Link className="game__next" to="/vyzkousej-to/3">
             Hurá! Povedlo se ti to 😊 Klikni TADY pro další hru!
-          </a>
+          </Link>
         ) : (
           <a className="reload" href="#" onClick={reload}>
             Tečkovaný rámeček jsi netrefil/a, klikni tady pro další pokus!

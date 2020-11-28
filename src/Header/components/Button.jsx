@@ -26,7 +26,7 @@ export default function ContainedButtons() {
 
   }
   return (
-    <Link to="/vyzkousej-to">
+    <Link to="/vyzkousej-to/1">
       <Button
       classes={{
         root: classes.root

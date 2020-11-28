@@ -20,7 +20,7 @@ const App = () => (
       <Route path="/kodovaci-wikipedie">
         <WikiPage />
       </Route>
-      <Route path="/vyzkousej-to">
+      <Route path="/vyzkousej-to/:step">
         <GamePage />
       </Route>
       <Route path="/kam-dal">

@@ -5,7 +5,18 @@ import Game3 from './Game3/game3.jsx';
 import Game4 from './Game4/game4.jsx';
 import './game.css';
 
-const Game = () => {
+const Game = (props) => {
+  let Game = <Game1 />
+if (props.step === 2)
+Game = <Game2 />
+if (props.step === 3)
+Game = <Game3 />
+if (props.step === 4)
+Game = <Game4 />
+
+
+
+
   return (
     <div id="game" className="game">
       <div className="game__title-flex">
@@ -15,10 +26,7 @@ const Game = () => {
           <p className="game__text">Vyzkoušej si naši hru!</p>
         </div>
       </div>
-      <Game1 />
-      <Game2 />
-      <Game3 />
-      <Game4 />
+     {Game}
     </div>
   );
 };

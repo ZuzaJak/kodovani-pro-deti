@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import unicorn from '../../img/FIN_picture/position/fin_unicorn/unicorn_ballon.svg';
 import './game3.css';
 
@@ -31,9 +32,9 @@ const Game3 = () => {
         {!flex ? (
           'Úkol 3: Pomocí vlastnosti justify-content přiměj jednorožce, aby létal před duhou (přetáhni obdélník se správným kódem na obrázek).'
         ) : flex === 'center' ? (
-          <a className="game__next" href="#game4">
+          <Link className="game__next" to="/vyzkousej-to/4">
             Hurá! Povedlo se ti to 😊 Klikni TADY pro další úkol!
-          </a>
+          </Link>
         ) : (
           <a className="reload" href="#" onClick={reload}>
             Jednorožec odletěl jinam! Klikni TADY pro další pokus!
