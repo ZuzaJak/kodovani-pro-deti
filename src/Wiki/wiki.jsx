@@ -1,4 +1,3 @@
-
 import React from 'react';
 import WikiContentHead from './components/WikiContentHead/wiki_head.jsx';
 import WikiContentSection from './components/WikiContentSection/wiki_section.jsx';
@@ -21,7 +20,6 @@ const Wiki = () => {
           <WikiContentTabPanel />
           <WikiContentTabList />
           <WikiContentSection /* snippet={snippet} */ />
-          
         </main>
       </div>
     </>
