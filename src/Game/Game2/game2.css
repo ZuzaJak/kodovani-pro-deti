@@ -1,0 +1,42 @@
+.game2__gallery {
+  width: 100%;
+  height: 400px;
+  padding-top: 200px;
+  background-image: url('../../img/FIN_picture/frame/fin/background.svg');
+  height: 60vh;
+  position: relative;
+}
+.game__quest2 {
+  display: flex;
+  justify-content: center;
+}
+.drag__game2 {
+  color: #0d0638;
+}
+.picture1 {
+  width: 100px;
+  position: absolute;
+  left: 50px;
+  top: 60px;
+}
+.picture2 {
+  width: 200px;
+  position: absolute;
+  left: 500px;
+  top: 150px;
+}
+.picture3 {
+  width: 150px;
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+.dotted {
+  border: 10px dotted #aa236d;
+}
+.dashed {
+  border: 10px dashed #aa236d;
+}
+.solid {
+  border: 10px solid #aa236d;
+}
