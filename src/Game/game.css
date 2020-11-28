@@ -1,0 +1,12 @@
+.game {
+  padding-top: 100px;
+}
+.game__title-flex {
+  display: flex;
+  padding: 50px;
+}
+.game__title-flex > .bracket {
+  margin-right: 20px;
+  font-size: 100px;
+  color: #aa236d;
+}

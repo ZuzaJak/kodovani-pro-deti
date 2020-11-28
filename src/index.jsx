@@ -23,6 +23,11 @@ const App = () => (
         <LinksPage />
       </Route>
     </Switch>
+    <Header />
+    <About />
+    <Wiki />
+    <Game />
+    <Links />
     <Footer />
   </Router>
 );
