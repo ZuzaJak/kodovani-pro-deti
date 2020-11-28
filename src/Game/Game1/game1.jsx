@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './game1.css';
-import space_image from '../../img/FIN_picture/background _nastaveni barev pozadi/fin/background.svg';
+import space_image from '../../img/FIN_picture/background/fin/background.svg';
 
 const Game1 = () => {
   const [color, setColor] = useState('');
@@ -26,12 +26,12 @@ const Game1 = () => {
   };
 
   return (
-    <div id="game" className="game">
-      <h2 className="game__quest">
+    <div id="game1" className="game1">
+      <h2 className="game__quest1">
         {!color ? (
           'Úkol 1: Obarvi pozadí vesmíru tmavě modrou barvou (přetáhni obdélník se správným kódem na obrázek).'
         ) : color === 'blue' ? (
-          <a className="game__next" href="#">
+          <a className="game__next" href="#game2">
             Hurá! Povedlo se ti to 😊 Klikni TADY pro další hru!
           </a>
         ) : (
@@ -43,17 +43,17 @@ const Game1 = () => {
       <div className="game__container">
         <div className="game__container-options">
           {!usedColors?.blue && (
-            <div className="drag blue" draggable onDragStart={drag}>
+            <div className="drag__game1 blue" draggable onDragStart={drag}>
               {'{background-color: blue}'}
             </div>
           )}
           {!usedColors?.pink && (
-            <div className="drag pink" draggable onDragStart={drag}>
+            <div className="drag__game1 pink" draggable onDragStart={drag}>
               {'{background-color: pink}'}
             </div>
           )}
           {!usedColors?.yellow && (
-            <div className="drag yellow" draggable onDragStart={drag}>
+            <div className="drag__game1 yellow" draggable onDragStart={drag}>
               {'{background-color: yellow}'}
             </div>
           )}

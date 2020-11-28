@@ -1,5 +1,6 @@
 import React from 'react';
 import Game1 from './Game1/game1.jsx';
+import Game2 from './Game2/game2.jsx';
 import './game.css';
 
 const Game = () => {
@@ -13,6 +14,7 @@ const Game = () => {
         </div>
       </div>
       <Game1 />
+      <Game2 />
     </div>
   );
 };
