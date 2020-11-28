@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import unicorn1 from '../../img/FIN_picture/position/fin_unicorn/unicorn_ballon.svg';
+import unicorn from '../../img/FIN_picture/position/fin_unicorn/unicorn_ballon.svg';
 import './game3.css';
 
 const Game3 = () => {
@@ -29,7 +29,7 @@ const Game3 = () => {
     <div id="game3" className="game3">
       <h2 className="game__quest3">
         {!flex ? (
-          'Úkol 3: Pomocí vlastnosti justify-content přiměj jednorožce, aby létal před duhou (přetáhni obdélník se správným kódem na obrázek jednorožce).'
+          'Úkol 3: Pomocí vlastnosti justify-content přiměj jednorožce, aby létal před duhou (přetáhni obdélník se správným kódem na obrázek).'
         ) : flex === 'center' ? (
           <a className="game__next" href="#game4">
             Hurá! Povedlo se ti to 😊 Klikni TADY pro další úkol!
@@ -48,12 +48,12 @@ const Game3 = () => {
         )}
         {!usedFlex?.left && (
           <div className="drag__game3 left" draggable onDragStart={drag}>
-            {'{ justify-content: left}'}
+            {'{ justify-content: flex-start}'}
           </div>
         )}
         {!usedFlex?.right && (
           <div className="drag__game3 right" draggable onDragStart={drag}>
-            {'{ justify-content: right }'}
+            {'{ justify-content: flex-end }'}
           </div>
         )}
       </div>
@@ -62,7 +62,7 @@ const Game3 = () => {
         onDrop={drop}
         onDragOver={allowDrop}
       >
-        <img src={unicorn1} alt="jednorožec" className="unicorn" />
+        <img src={unicorn} alt="jednorožec" className="unicorn" />
       </div>
     </div>
   );

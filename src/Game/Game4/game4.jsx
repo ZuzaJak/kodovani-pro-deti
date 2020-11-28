@@ -29,14 +29,14 @@ const Game4 = () => {
     <div id="game4" className="game4">
       <h2 className="game__quest3">
         {!flex ? (
-          'Úkol 4: Pomocí vlastnosti align-items dej prasátko na kopeček (přetáhni obdélník se správným kódem na obrázek prasátka).'
-        ) : flex === 'center' ? (
+          'Úkol 4: Pomocí vlastnosti align-items dej prasátko na obrázek úplně dolů (přetáhni obdélník se správným kódem na obrázek prasátka).'
+        ) : flex === 'end' ? (
           <a className="game__next" href="#end_game">
             Hurá! Povedlo se ti to 😊 Dokončil/a jsi správně všechny úkoly!
           </a>
         ) : (
           <a className="reload" href="#" onClick={reload}>
-            Prasátko není uprostřed! Klikni TADY pro další pokus!
+            Prasátko není na kopci! Klikni TADY pro další pokus!
           </a>
         )}
       </h2>
