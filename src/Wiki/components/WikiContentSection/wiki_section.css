@@ -1,35 +1,34 @@
 /* WIKI content section */
-
 .wiki__sections {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: rgba(196, 196, 196, 0.15);
   margin: 20px;
 }
-.wiki__section {
+.wiki__section1 {
   font-family: 'Noto Sans', cursive;
   padding: 70px;
 }
 
-.wiki__section-header {
-font-family: "Press Start 2P", sans-serif;
-
+.wiki__section1-header {
+  font-family: 'Press Start 2P', sans-serif;
 }
-.wiki_section_subHeader {
+.wiki_section1_subHeader {
   font-family: 'Roboto', sans-serif;
 }
 @media only screen and (min-width: 992px) {
-  .wiki__sections {
-    flex-direction: row;
-  }
 }
-.wiki__section {
-
+.wiki__section1 {
   font-size: 16px;
   padding: 20px;
 }
-.wiki__section-border {
+.wiki__section2 {
+  display: flex;
+}
+.wiki__section2-item {
+  flex: 1 1 50%;
+}
+.wiki__section2-border {
   border: 1px solid black;
   margin: 10px;
   padding: 10px;
@@ -38,10 +37,10 @@ font-family: "Press Start 2P", sans-serif;
   font-family: 'Roboto', sans-serif;
   width: 20rem;
 }
-.wiki__section-header {
+.wiki__section1-header {
   color: #aa236d;
 }
-.wiki__section-text {
+.wiki__section1-text {
   text-align: justify;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
