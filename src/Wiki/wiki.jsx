@@ -1,8 +1,6 @@
 import React from 'react';
 import WikiContentHead from './components/WikiContentHead/wiki_head.jsx';
 import { HtmlWikiContentSection,CssWikiContentSection } from './components/WikiContentSection/wiki_section.jsx';
-
-// import snippet from './components/WikiContentSection/index.jsx';
 import WikiContentNavigation from './components/WikiContentNavigation/wiki_navigation.jsx';
 import WikiContentTabPanel from "./components/WikiContentTabPanel/WikiTabPanel.jsx";
 import { Button } from '@material-ui/core';
