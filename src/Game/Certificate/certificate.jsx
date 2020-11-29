@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import certificate from "../../img/diplom.svg"
 ​
 function resizeCanvas(canvas) {
   const { width, height } = canvas.getBoundingClientRect();
@@ -40,7 +39,6 @@ const Certificate = (props) => {
       style={{ display: "flex", flexDirection: "column", minHeight: "50vh" }}
     >
       <canvas ref={canvasRef} style={{ flex: "1" }}></canvas>
-      <img ref="image" src={certificate} alt="diplom" />
       <button onClick={render}>Render</button>
     </div>
   );
