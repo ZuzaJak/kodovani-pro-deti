@@ -19,9 +19,10 @@ function resizeCanvas(canvas) {
 function draw(context, canvas) {
   resizeCanvas(canvas);
 ​
- /*  context.beginPath();
+  context.fillStyle = "#ff0000";
+  context.beginPath();
+  context.arc(50, 100, 20, 0, 2 * Math.PI);
   context.fill();
-  context. */
   context.fillText('Text', canvas.width / 2, canvas.height / 2)
 }
 ​
@@ -35,15 +36,14 @@ const Certificate = (props) => {
   };
 ​
   return (
-    
     <div
       style={{ display: "flex", flexDirection: "column", minHeight: "50vh" }}
     >
-      <img id="diplom" width="220" height="277" src={certificate} alt="diplom" />
       <canvas ref={canvasRef} style={{ flex: "1" }}></canvas>
+      <img ref="image" src={certificate} alt="diplom" />
       <button onClick={render}>Render</button>
     </div>
   );
 };
 ​
-export default Certificate;
+export default Certificate; 
