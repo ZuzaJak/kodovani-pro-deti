@@ -17,8 +17,8 @@ const Game = (props) => {
   return (
     
     <div id="game" className="game">
-      <div className="game__title-flex">
         <img className="game_img" src={game_img} alt="obrazek hry" />
+        <div className="game__title-flex">
           <span className="bracket"> {'{'}</span>{' '}
             <div className="game__title-bracket-flex">
               <h1 className="game__title">Hra</h1>

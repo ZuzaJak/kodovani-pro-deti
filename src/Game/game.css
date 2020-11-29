@@ -1,18 +1,22 @@
 
 
-/* zobrazení hry pouze pro šířky nad 768px */
+
 @media only screen and (max-width: 768px) {
 
 .game_img {
-  background-image: url("../img/FIN_picture/media_query/responsive_768px_game.svg");
-   }
-  
-}
-
-@media only screen and (max-width: 1020px) {
-
-.game_img{
+    background-image: url("../img/FIN_picture/media_query/responsive_768px_game.svg");
+   height: 50%;
+     }
+.game__title-flex {
   display: none;
+}
+  }
+
+
+/* zobrazeni vetsi nez 768px */
+
+.game_img {
+    display: none;
   }
 
 .game {
@@ -26,5 +30,4 @@
   margin-right: 20px;
   font-size: 100px;
   color: #aa236d;
-}
 }
