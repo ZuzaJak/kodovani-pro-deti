@@ -37,7 +37,7 @@ export default function MouseOverPopover() {
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
       >
-     <div className="wiki__section-border">Kam se tohle píše: </div>
+     <div className="wiki__section-border">Kam se to píše: </div>
       </Typography>
       <Popover
         id="mouse-over-popover"
