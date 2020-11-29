@@ -25,12 +25,15 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
   appBar: {
+    
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
+
     }),
   },
   appBarShift: {
+    
     color: "#0d0638",
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
@@ -41,18 +44,23 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    
   },
   hide: {
+  
     display: "none",
   },
   drawer: {
+    
     width: drawerWidth,
     flexShrink: 0,
   },
   drawerPaper: {
+    
     width: drawerWidth,
   },
   drawerHeader: {
+   
     display: "flex",
     alignItems: "center",
     padding: theme.spacing(0, 1),
@@ -61,6 +69,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-end",
   },
   content: {
+    
     flexGrow: 1,
     padding: theme.spacing(3),
     transition: theme.transitions.create("margin", {
@@ -154,13 +163,16 @@ export default function PersistentDrawerLeft() {
             ".font",
             ".font-size",
             ".float",
+            
           ].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index ? <StyleIcon /> : <StyleIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
+            <HashLink to={{ hash: text }}>
+              <ListItem button key={text}>
+                <ListItemIcon>
+                  {index ? <StyleIcon /> : <StyleIcon />}
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItem>
+            </HashLink>
           ))}
         </List>
       </Drawer>

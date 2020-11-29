@@ -3,7 +3,7 @@
 }
 .about__title-flex {
   display: flex;
-  padding: 50px;
+  padding: 20px;
 }
 .about__title-flex > .bracket {
   margin-right: 20px;

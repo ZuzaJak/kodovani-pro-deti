@@ -15,11 +15,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 .title__heading {
   font-size: 25px;
   color: #0d0638;
   font-weight: 900;
+
 }
 .btn {
   color: #ffffff;

@@ -31,7 +31,7 @@ const Game3 = () => {
       <h2 className="game__quest3"
       style={{height:100, backgroundColor: '#f2f2f2', color: "#0d0638"}}>
         {!flex ? (
-          'Úkol 3: Pomocí vlastnosti justify-content přiměj jednorožce, aby létal před duhou (přetáhni obdélník se správným kódem na obrázek).'
+          'Úkol 3: Pomocí vlastnosti justify-content přiměj jednorožce, aby létal před duhou - uprostřed obrázku (přetáhni obdélník se správným kódem na obrázek).'
         ) : flex === 'center' ? (
           <Link className="game__next" to="/vyzkousej-to/4"
            style={{ textDecoration: 'none' }}>

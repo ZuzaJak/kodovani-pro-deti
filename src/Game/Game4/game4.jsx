@@ -36,7 +36,7 @@ const Game4 = () => {
         ) : flex === 'end' ? (
           <Link className="game__next" to="/vyzkousej-to/5"
             style={{ textDecoration: 'none' }}>
-            Hurá! Povedlo se ti to 😊 Klikni a získáš DIPLOM!
+            Hurá! Povedlo se ti to 😊 Klikni a získáš DIPLOM! 🎓
           </Link>
         ) : (
           <a className="reload" href="#" onClick={reload}
