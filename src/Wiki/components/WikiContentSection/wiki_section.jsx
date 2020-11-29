@@ -20,21 +20,11 @@ const WikiContentSection = (language) => (props) => {
               {props.snippetText}
             </SyntaxHighlighter>
           </div>
-<<<<<<< HEAD
         </div>
         <div className="wiki__section2-item">
           <MouseOverPopoverCss />
           <div dangerouslySetInnerHTML={{ __html: props.snippetText }}></div>
         </div>
-=======
-        </div>
-        <MouseOverPopoverCss />
-        <div
-          className="wiki__section2-item"
-          dangerouslySetInnerHTML={{ __html: props.snippetText }}
-        ></div>
-
->>>>>>> e4144b2106c6f522d138b68aaf0f6d5c8dab6b46
       </div>
     </div>
   );
