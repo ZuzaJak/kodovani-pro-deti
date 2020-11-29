@@ -1,18 +1,21 @@
-import React from 'react';
-import WikiContentHead from './components/WikiContentHead/wiki_head.jsx';
-import { HtmlWikiContentSection,CssWikiContentSection } from './components/WikiContentSection/wiki_section.jsx';
-import WikiContentNavigation from './components/WikiContentNavigation/wiki_navigation.jsx';
-import WikiContentTabPanel from "./components/WikiContentTabPanel/WikiTabPanel.jsx";
-import { Button } from '@material-ui/core';
-
+import React from "react";
+import WikiContentHead from "./components/WikiContentHead/wiki_head.jsx";
+import {
+  HtmlWikiContentSection,
+  CssWikiContentSection,
+} from "./components/WikiContentSection/wiki_section.jsx";
+import WikiContentNavigation from "./components/WikiContentNavigation/wiki_navigation.jsx";
+import { Button } from "@material-ui/core";
+import { HtmlData } from "./html-data";
+import { CssData } from "./css-data";
 
 const HtmlUkazka = [
-  
   {
-  header: "Jak se tady vyznat",
+    header: "Jak se tady vyznat",
     subHeader: "co a jak používáme",
-    text: "Začátky bývají těžké, ale každý jednou začínal. Aby to učení bylo o fous lehčí, tady najdeš praktické ukázky kódu s vysvětlením. U každého příkladu tagu nebo vlastosti najdeš vždy dva rámečky - rámeček s kódem, který si můžeš jednoduše překopírovat do své stránky a vše si tak vyzkoušet. A druhý rámeček ve kterém uvidíš výsledek, který se zobrazí na webové stránce. Každá stránka začíná stále stejnými tagy - ty ukazujeme pouze v prvním příkladu, protože jsou stále stejné, jedná se o prvních pět řádků a můžeš si je zkopírovat do stránky přímo odsud.",
-     snippetText:`<!DOCTYPE html>
+    text:
+      "Začátky bývají těžké, ale každý jednou začínal. Aby to učení bylo o fous lehčí, tady najdeš praktické ukázky kódu s vysvětlením. U každého příkladu tagu nebo vlastosti najdeš vždy dva rámečky - rámeček s kódem, který si můžeš jednoduše překopírovat do své stránky a vše si tak vyzkoušet. A druhý rámeček ve kterém uvidíš výsledek, který se zobrazí na webové stránce. Každá stránka začíná stále stejnými tagy - ty ukazujeme pouze v prvním příkladu, protože jsou stále stejné, jedná se o prvních pět řádků a můžeš si je zkopírovat do stránky přímo odsud.",
+    snippetText: `<!DOCTYPE html>
 <html lang="cs">
 <head>
 <meta charset="UTF-8" />
@@ -25,128 +28,46 @@ const HtmlUkazka = [
 
 </body>
 
-</html>`
-}]
-
-
- const HtmlData = [
-   { header: "<HTML>",
-    subHeader: "značkovací jazyk",
-    text: "Je to zkratka z anglického Hypertext Markup Language, česky říkáme značkovací jazyk. HTML je taková kostra webové stránky. Skládá se z takzvaných tagů (značek), které se píší pomocí špičatých závorek <>. Tagů je velké množství, na této stránce si ukážeme ty základní a nejdůležitější.",
-     snippetText:`<body>
-
-<p>Tagů je opravdu velká spousta - tak jdeme na to!</p>
-
-</body>
-
 </html>`,
-    },
-
-    { header: "<body>",
-    subHeader: "tělo stránky",
-    text: "Body znamená tělo. Tag body je tedy takovým tělem stránky. Do tohoto těla stránky píšeme všechny další tagy. Důležité je, že vše, co je uvnitř tagu body, se zobrazuje na webové stránce. Do tohoto tagu body se píší všechny následující tagy.",
-    snippetText:`<body>
-
-Tady se odehrává všechno důležité.
-
-</body>
-
-</html>`,
-    },
-    
-    { header: "<h1>",
-    subHeader: "opravdu velký nadpis",
-    text: "Zkratka z anglického heading, nadpis. Tag h1 je nadpis největší, pak jsou ještě nadpisy menší a značí se h2 až h6.",
-    snippetText:`<body>
-
-<h1>Tady bude něco důležitého</h1>
-
-</body>
-
-</html>`,
-    },
-
-    { header: "<p>",
-    subHeader: "jak psát text",
-    text: "Prvek <p> definuje odstavec - prostě kus textu. Odstavec začíná vždy na novém řádku a prohlížeče automaticky přidávají ještě nějaké prázdné místo před a za odstavec.",
-    snippetText:`<body>
- 
-<p>Tady bude třeba věta, řádek nebo i odstavec.</p>
-    
-</body>
-
-</html>`,
-    },
- ]
-
-
-
-const CssData =  [
-
-  { header: "CSS",
-  subHeader: "chceš barevný nadpis?",
-  text:" Jedná se o zkratku, která znamená Cascading Style Sheets, česky 'kaskádové styly'. Pomocí CSS lze obarvit text a jeho pozadí, nastavit různou velikost textu a různé objekty můžeš umisťovat kamkoliv na stránce.",
-  snippetText:`<h1 style="background-color:#FF69B4;">Růžová</h1>`
   },
+];
 
-
-    { header: "background-color",
-    subHeader: "chceš barevný nadpis?",
-    text:" Jedná se o zkratku, která znamená Cascading Style Sheets, česky 'kaskádové styly'. Pomocí CSS lze obarvit text a jeho pozadí, nastavit různou velikost textu a různé objekty můžeš umisťovat kamkoliv na stránce.",
-    snippetText:`<h1 style="background-color:#FF69B4;">Růžová</h1>`
-    },
-
-    { header: "border",
-    subHeader: "nastav rámeček",
-    text:"Tato vlastnost nastavuje barevnost celému prvku. Barvy se zadávají pomocí speciálního označení - HEX. Barva se většinou se zadává s křížkem a šestimístným kódem, který je směsicí čísel a písmen a označuje příslušnou hodnotu na barevné škále. Tak třeba pokud zadáš #FF0000 bude výsledkem krásně červená barva. Barevný HEX kód si můžeš vybrat a zkopírovat třeba z této stránky: ",
-    snippetText:`<p class="dotted">Tečkovaný rámeček.</p>`
-    },
-
-
-
-
-]
-
-
-
-const Wiki = () => {
-  return (
-   <>
-      <div id="wiki">
-        <main>
-          <WikiContentHead />
-          <WikiContentNavigation />
-          <Button />
-          <WikiContentTabPanel /> 
-          {HtmlUkazka.map((section) => (
-          <HtmlWikiContentSection 
+const Wiki = () => (
+  <div id="wiki">
+    <main>
+      <WikiContentHead />
+      <WikiContentNavigation />
+      <Button />
+      {HtmlUkazka.map((section) => (
+        <HtmlWikiContentSection
           key={section.header}
           header={section.header}
           subHeader={section.subHeader}
-          text={section.text} 
+          text={section.text}
           snippetText={section.snippetText}
-          />))}
-          {HtmlData.map((section) => (
-          <HtmlWikiContentSection 
-            key={section.header}
-            header={section.header}
-            subHeader={section.subHeader}
-            text={section.text} 
-            snippetText={section.snippetText}
-            />))}
-            {CssData.map((section) => (
-          <CssWikiContentSection 
-             key={section.subHeader}
-             header={section.header}
-             subHeader={section.subHeader}
-             text={section.text} 
-             snippetText={section.snippetText}
-                     />
-          ))}
-        </main>
-      </div>
-    </>
-  );
-};
+        />
+      ))}
+      {HtmlData.map((section) => (
+        <HtmlWikiContentSection
+          key={section.header}
+          id={section.id ?? ""}
+          header={section.header}
+          subHeader={section.subHeader}
+          text={section.text}
+          snippetText={section.snippetText}
+        />
+      ))}
+      {CssData.map((section) => (
+        <CssWikiContentSection
+          key={section.subHeader}
+          header={section.header}
+          subHeader={section.subHeader}
+          text={section.text}
+          snippetText={section.snippetText}
+        />
+      ))}
+    </main>
+  </div>
+);
 
 export default Wiki;

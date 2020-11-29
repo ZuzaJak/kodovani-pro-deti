@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import './nav.css';
-import { Link } from 'react-router-dom';
-
-
+import React, { useState } from "react";
+import "./nav.css";
+import { Link } from "react-router-dom";
 
 const HamMenu = ({ href, onSelect, text }) => {
   return (
@@ -12,17 +10,21 @@ const HamMenu = ({ href, onSelect, text }) => {
   );
 };
 
-const Nav = () => {
+const Nav = (props) => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   const handleHamMenu = () => {
     setMenuOpened(false);
   };
+
   return (
     <div className="navbar">
-      <div className="navbar__left">{'<kódování pro děti/>'}</div>
+      <div className="navbar__left">
+        {props.children}
+        {"<kódování pro děti/>"}
+      </div>
       <div className="navbar__right">
-        <div className={menuOpened ? 'menu' : 'menu--closed'}>
+        <div className={menuOpened ? "menu" : "menu--closed"}>
           <button
             className="menu__btn"
             onClick={() => setMenuOpened(true)}
