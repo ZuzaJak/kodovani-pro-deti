@@ -63,6 +63,8 @@
   margin-top: 0.75rem;
   position: relative;
   border-radius: 10px;
+  line-height: 2;
+
 }
 
 .menu--closed .menu__items {

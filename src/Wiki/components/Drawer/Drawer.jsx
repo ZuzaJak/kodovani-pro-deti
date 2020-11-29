@@ -15,8 +15,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+
 
 import CodeIcon from '@material-ui/icons/Code';
 import StyleIcon from '@material-ui/icons/Style';
@@ -49,7 +48,6 @@ const useStyles = makeStyles((theme) => ({
     }),
   },
   menuButton: {
-    
     marginRight: theme.spacing(2),
 
   },
@@ -161,16 +159,6 @@ export default function PersistentDrawerLeft() {
           ))}
         </List>
       </Drawer>
-      <main
-        className={clsx(classes.content, {
-          [classes.contentShift]: open,
-        })}
-      >
-        <div className={classes.drawerHeader} />
-        <Typography>
-   
-        </Typography>
-      </main>
     </div>
   );
 }
