@@ -1,4 +1,4 @@
-import React { useRef } from "react";
+import React, { useRef } from "react";
 ​
 function resizeCanvas(canvas) {
   const { width, height } = canvas.getBoundingClientRect();
@@ -18,10 +18,9 @@ function resizeCanvas(canvas) {
 function draw(context, canvas) {
   resizeCanvas(canvas);
 ​
-  context.fillStyle = "#ff0000";
-  context.beginPath();
-  context.arc(50, 100, 20, 0, 2 * Math.PI);
+ /*  context.beginPath();
   context.fill();
+  context. */
   context.fillText('Text', canvas.width / 2, canvas.height / 2)
 }
 ​
@@ -35,6 +34,7 @@ const Certificate = (props) => {
   };
 ​
   return (
+    
     <div
       style={{ display: "flex", flexDirection: "column", minHeight: "50vh" }}
     >

@@ -8,8 +8,8 @@ const useStyles = makeStyles((theme) => ({
     pointerEvents: 'none',
   },
   paper: {
-    padding: theme.spacing(5),
-    width: '50%',
+    padding: theme.spacing(2),
+    width: '25%',
     backgroundColor: '#aa236d',
     color: 'white',
   },

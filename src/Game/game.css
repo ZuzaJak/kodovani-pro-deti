@@ -2,9 +2,6 @@
 
 /* zobrazení hry pouze pro šířky nad 768px */
 @media only screen and (max-width: 768px) {
-  .game__title-flex {
-    display: none;
-  }
 
 .game_img {
   background-image: url("../img/FIN_picture/media_query/responsive_768px_game.svg");
@@ -12,6 +9,7 @@
   
 }
 
+@media only screen and (max-width: 1020px) {
 
 .game_img{
   display: none;
@@ -28,4 +26,5 @@
   margin-right: 20px;
   font-size: 100px;
   color: #aa236d;
+}
 }
