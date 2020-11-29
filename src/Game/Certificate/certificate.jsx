@@ -18,10 +18,9 @@ function resizeCanvas(canvas) {
 
 function draw(context, canvas) {
   resizeCanvas(canvas);
-
   context.beginPath();
   context.fill();
-  context.drawImage(diplom);
+  context.drawImage(image, 50, 50);
   context.fillText('Text', canvas.width / 2, canvas.height / 2);
   context.save();
 }
@@ -41,7 +40,9 @@ const Certificate = (props) => {
       style={{ display: 'flex', flexDirection: 'column', minHeight: '50vh' }}
     >
       <canvas ref={canvasRef} style={{ flex: '1' }}></canvas>
-      <button onClick={render}>Render</button>
+      <label htmlFor="name">Napiš tvé jméno a příjmení:</label>
+      <input type="text" />
+      <button onClick={render}>Klikni a DIPLOM je tvůj!</button>
     </div>
   );
 };
