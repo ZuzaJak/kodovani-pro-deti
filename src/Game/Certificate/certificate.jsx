@@ -21,7 +21,7 @@ function draw(context, canvas) {
 
   context.beginPath();
   context.fill();
-  context.drawImage({ diplom });
+  context.drawImage(diplom);
   context.fillText('Text', canvas.width / 2, canvas.height / 2);
   context.save();
 }
