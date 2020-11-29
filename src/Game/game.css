@@ -1,9 +1,21 @@
+
+
 /* zobrazení hry pouze pro šířky nad 768px */
 @media only screen and (max-width: 768px) {
-  .game {
+  .game__title-flex {
     display: none;
   }
+
+.game_img {
+  background-image: url("../img/FIN_picture/media_query/responsive_768px_game.svg");
+   }
+  
 }
+
+
+.game_img{
+  display: none;
+  }
 
 .game {
   padding-top: 100px;
@@ -17,11 +29,3 @@
   font-size: 100px;
   color: #aa236d;
 }
-
-/* 
-
-@media only screen and (max-width:576 px) {
-  .picture_game{
-  background-image: url("../../img/FIN_picture/media_query/responsive_768px_game.svg");
-  }
-}  */

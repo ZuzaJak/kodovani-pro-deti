@@ -3,7 +3,7 @@ import Game1 from './Game1/game1.jsx';
 import Game2 from './Game2/game2.jsx';
 import Game3 from './Game3/game3.jsx';
 import Game4 from './Game4/game4.jsx';
-
+import game_img from "../img/FIN_picture/media_query/responsive_768px_game.svg"
 import './game.css';
 
 const Game = (props) => {
@@ -18,14 +18,15 @@ const Game = (props) => {
 
   return (
     <div id="game" className="game">
-      <div className="game__title-flex">
+      <img className="game_img" src={game_img} alt="obrazek hry" />
+    <div className="game__title-flex">
         <span className="bracket"> {'{'}</span>{' '}
         <div className="game__title-bracket-flex">
           <h1 className="game__title">Hra</h1>
           <p className="game__text">Vyzkoušej si naši hru!</p>
         </div>
-      </div>
-     {Game}
+        {Game}
+      </div> 
     </div>
   );
 };
