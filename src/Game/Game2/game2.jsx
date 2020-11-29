@@ -30,16 +30,19 @@ const Game2 = () => {
 
   return (
     <div id="game2" className="game2">
-      <h2 className="game__quest2">
+      <h2 className="game__quest2"
+      style={{height:70, backgroundColor: 'lightGrey', color: "#0d0638"}}>
         {!border ? (
           'Úkol 2: Přidej obrázkům tečkovaný rámeček (přetáhni obdélník se správným kódem na obrázky).'
         ) : border === 'dotted' ? (
-          <Link className="game__next" to="/vyzkousej-to/3">
-            Hurá! Povedlo se ti to 😊 Klikni TADY pro další hru!
+          <Link className="game__next" to="/vyzkousej-to/3"
+            style={{ textDecoration: 'none' }}>
+            Hurá! Povedlo se ti to 😊 Klikni sem pro další hru!
           </Link>
         ) : (
-          <a className="reload" href="#" onClick={reload}>
-            Tečkovaný rámeček jsi netrefil/a, klikni tady pro další pokus!
+          <a className="reload" href="#" onClick={reload}
+            style={{ textDecoration: 'none' }}>
+            Tečkovaný rámeček jsi netrefil/a, klikni sem pro další pokus!
           </a>
         )}
       </h2>

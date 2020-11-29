@@ -28,9 +28,10 @@ const Game1 = () => {
 
   return (
     <div id="game1" className="game1">
-      <h2 className="game__quest1">
-        {!color ? (
-          'Úkol 1: Obarvi pozadí vesmíru tmavě modrou barvou (přetáhni obdélník se správným kódem na obrázek).'
+      <h2 className="game__quest1"
+      style={{height:70, backgroundColor: 'lightGrey', color: "#0d0638"}}
+      >
+        {!color ? ('Úkol 1: Obarvi pozadí vesmíru tmavě modrou barvou (přetáhni obdélník se správným kódem na obrázek).'
         ) : color === 'blue' ? (
           <Link className="game__next" to="/vyzkousej-to/2"
            style={{ textDecoration: 'none' }}>
@@ -38,8 +39,8 @@ const Game1 = () => {
           </Link>
         ) : (
           <a className="reload" href="#" onClick={reload}
-          style={{ textDecoration: 'none' }}>
-            Modrou jsi netrefil/a, klikni sem pro další pokus!
+            style={{ textDecoration: 'none'}}>
+            Modrou jsi netrefil/a, klikni 👉 sem pro další pokus!
           </a>
         )}
       </h2>

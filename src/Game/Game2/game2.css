@@ -10,10 +10,16 @@
   background-position-x: center;
 }
 .game__quest2 {
+  width: 65%;
+  padding: 20px;
+  margin: auto;
   display: flex;
   justify-content: center;
-  width: 80%;
-  margin: auto;
+  align-items: center;
+  
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 .drag__game2 {
   color: #0d0638;

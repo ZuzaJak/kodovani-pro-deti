@@ -9,10 +9,16 @@
   height: 70vh;
 }
 .game__quest4 {
+  width: 65%;
+  padding: 20px;
+  margin: auto;
   display: flex;
   justify-content: center;
-  width: 80%;
-  margin: auto;
+  align-items: center;
+  
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 .game4__container {
   width: 90%;
