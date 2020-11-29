@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import pig from '../../img/FIN_picture/position/fin_krajina/pig.svg';
 import './game4.css';
 
@@ -31,9 +32,9 @@ const Game4 = () => {
         {!flex ? (
           'Úkol 4: Pomocí vlastnosti align-items dej prasátko na obrázek úplně dolů (přetáhni obdélník se správným kódem na obrázek prasátka).'
         ) : flex === 'end' ? (
-          <a className="game__next" href="#end_game">
-            Hurá! Povedlo se ti to 😊 Dokončil/a jsi správně všechny úkoly!
-          </a>
+          <Link className="game__next" to="/vyzkousej-to/5">
+            Hurá! Povedlo se ti to 😊 Klikni a získáš DIPLOM!
+          </Link>
         ) : (
           <a className="reload" href="#" onClick={reload}>
             Prasátko není na kopci! Klikni TADY pro další pokus!
