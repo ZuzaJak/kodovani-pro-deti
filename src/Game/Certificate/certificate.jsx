@@ -18,15 +18,18 @@ function resizeCanvas(canvas) {
 }
 
 function draw(context, canvas) {
-  resizeCanvas(canvas);
-  context.beginPath();
-  context.fill();
-  context.drawImage(diplom, 50, 50);
-  context.fillText('Text', canvas.width / 2, canvas.height / 2);
-  context.save();
+  const image = new Image();
+  image.src = diplom;
+  image.onload = () => {
+    resizeCanvas(canvas);
+    context.beginPath();
+    context.fillText('Text', canvas.width / 2, canvas.height / 2);
+    context.drawImage(image, 0, 0, 600, 600);
+    context.save();
+  };
 }
 
-const Certificate = (props) => {
+const Certificate = () => {
   const canvasRef = useRef(null);
 
   const render = () => {
@@ -37,7 +40,11 @@ const Certificate = (props) => {
 
   return (
     <div id="certificate" className="certificate__div">
-      <canvas ref={canvasRef} style={{ flex: '1' }}></canvas>
+      <canvas
+        className="cert__canvas"
+        ref={canvasRef}
+        style={{ flex: '1' }}
+      ></canvas>
       <label className="cert__label" htmlFor="name">
         Napiš své jméno a příjmení:
       </label>
