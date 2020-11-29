@@ -3,18 +3,16 @@ import Game1 from './Game1/game1.jsx';
 import Game2 from './Game2/game2.jsx';
 import Game3 from './Game3/game3.jsx';
 import Game4 from './Game4/game4.jsx';
+import Certificate from './Certificate/certificate.jsx';
 
 import './game.css';
 
 const Game = (props) => {
-  let Game = <Game1 />
-    if (props.step === 2)
-     Game = <Game2 />
-    if (props.step === 3)
-     Game = <Game3 />
-    if (props.step === 4)
-     Game = <Game4 />
-
+  let Game = <Game1 />;
+  if (props.step === 2) Game = <Game2 />;
+  if (props.step === 3) Game = <Game3 />;
+  if (props.step === 4) Game = <Game4 />;
+  if (props.step === 5) Game = <Certificate />;
 
   return (
     <div id="game" className="game">
@@ -25,7 +23,7 @@ const Game = (props) => {
           <p className="game__text">Vyzkoušej si naši hru!</p>
         </div>
       </div>
-     {Game}
+      {Game}
     </div>
   );
 };
