@@ -32,12 +32,14 @@ const Game1 = () => {
         {!color ? (
           'Úkol 1: Obarvi pozadí vesmíru tmavě modrou barvou (přetáhni obdélník se správným kódem na obrázek).'
         ) : color === 'blue' ? (
-          <Link className="game__next" to="/vyzkousej-to/2">
-            Hurá! Povedlo se ti to 😊 Klikni TADY pro další hru!
+          <Link className="game__next" to="/vyzkousej-to/2"
+           style={{ textDecoration: 'none' }}>
+            Hurá! Povedlo se ti to 😊 Klikni sem pro další hru!
           </Link>
         ) : (
-          <a className="reload" href="#" onClick={reload}>
-            Modrou jsi netrefil/a, klikni tady pro další pokus!
+          <a className="reload" href="#" onClick={reload}
+          style={{ textDecoration: 'none' }}>
+            Modrou jsi netrefil/a, klikni sem pro další pokus!
           </a>
         )}
       </h2>

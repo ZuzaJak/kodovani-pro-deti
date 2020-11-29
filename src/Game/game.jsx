@@ -22,17 +22,9 @@ const Game = (props) => {
           Ahoj! Pokud budeš na počítači, tady se ti zobrazí hra.
         </p>
       </div>
-      <div className="game__display-options">
-        <div className="game__title-flex">
-          <span className="bracket"> {'{'}</span>{' '}
-          <div className="game__title-bracket-flex">
-            <h1 className="game__title">Hra</h1>
-            <p className="game__text">Vyzkoušej si naši hru!</p>
-          </div>
-        </div>
         {Game}
       </div>
-    </div>
+  
   );
 };
 export default Game;
