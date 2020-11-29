@@ -1,8 +1,7 @@
 import React from 'react';
 import './wiki_section.css';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import MouseOverPopoverHtml from '../PopoverHtml/popover';
-import MouseOverPopoverCss from '../PopoverCss/popover';
+
 
 const WikiContentSection = (language) => (props) => {
   return (
@@ -14,7 +13,6 @@ const WikiContentSection = (language) => (props) => {
       </div>
       <div className="wiki__section2">
         <div className="wiki__section2-item">
-          <MouseOverPopoverHtml />
           <div className="wiki__section2-border">
             <SyntaxHighlighter language={language}>
               {props.snippetText}
@@ -22,7 +20,6 @@ const WikiContentSection = (language) => (props) => {
           </div>
         </div>
         <div className="wiki__section2-item">
-          <MouseOverPopoverCss />
           <div className="wiki__section2-border">
             <div dangerouslySetInnerHTML={{ __html: props.snippetText }}></div>
           </div>

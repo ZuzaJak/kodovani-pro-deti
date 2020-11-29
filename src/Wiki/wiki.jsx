@@ -6,67 +6,75 @@ import WikiContentTabPanel from "./components/WikiContentTabPanel/WikiTabPanel.j
 import { Button } from '@material-ui/core';
 
 
+const HtmlUkazka = [
+  
+  {
+  header: "Jak se tady vyznat",
+    subHeader: "co a jak používáme",
+    text: "Začátky bývají těžké, ale každý jednou začínal. Aby to učení bylo o fous lehčí, tady najdeš praktické ukázky kódu s vysvětlením. U každého příkladu tagu nebo vlastosti najdeš vždy dva rámečky - rámeček s kódem, který si můžeš jednoduše překopírovat do své stránky a vše si tak vyzkoušet. A druhý rámeček ve kterém uvidíš výsledek, který se zobrazí na webové stránce. Každá stránka začíná stále stejnými tagy - ty ukazujeme pouze v prvním příkladu, protože jsou stále stejné, jedná se o prvních pět řádků a můžeš si je zkopírovat do stránky přímo odsud.",
+     snippetText:`<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ahoj, já jsem název stránky a nezobrazuji se</title>
+</head>
+<body>
 
+<p>....můžemem začít za 3, 2, 1 ...</p>
+
+</body>
+
+</html>`
+}]
 
 
  const HtmlData = [
    { header: "<HTML>",
     subHeader: "značkovací jazyk",
     text: "Je to zkratka z anglického Hypertext Markup Language, česky říkáme značkovací jazyk. HTML je taková kostra webové stránky. Skládá se z takzvaných tagů (značek), které se píší pomocí špičatých závorek <>. Tagů je velké množství, na této stránce si ukážeme ty základní a nejdůležitější.",
-     snippetText:`<html lang='cs'>
-<head>
-<title>Ahoj, já jsem název stránky a nezobrazuji se</title>
-</head>
-<body>
+     snippetText:`<body>
 
 <p>Tagů je opravdu velká spousta - tak jdeme na to!</p>
 
 </body>
+
 </html>`,
     },
 
-    { header: "<BODY>",
+    { header: "<body>",
     subHeader: "tělo stránky",
     text: "Body znamená tělo. Tag body je tedy takovým tělem stránky. Do tohoto těla stránky píšeme všechny další tagy. Důležité je, že vše, co je uvnitř tagu body, se zobrazuje na webové stránce. Do tohoto tagu body se píší všechny následující tagy.",
-    snippetText:`<html lang='cs'>
-<head>
-<title>Název stránky</title>
-</head>
-<body>
+    snippetText:`<body>
 
 Tady se odehrává všechno důležité.
 
 </body>
+
 </html>`,
     },
     
-    { header: "<H1>",
+    { header: "<h1>",
     subHeader: "opravdu velký nadpis",
     text: "Zkratka z anglického heading, nadpis. Tag h1 je nadpis největší, pak jsou ještě nadpisy menší a značí se h2 až h6.",
-    snippetText:`<html lang='cs'>
-<head>
-<title>Ahoj, já jsem název stránky</title>
-</head>
-<body>
+    snippetText:`<body>
 
 <h1>Tady bude něco důležitého</h1>
 
 </body>
+
 </html>`,
     },
 
     { header: "<p>",
     subHeader: "jak psát text",
-    text: "Prvek HTML <p> definuje odstavec. Odstavec začíná vždy na novém řádku a prohlížeče automaticky přidávají nějaké prázdné místo (okraj) před a za odstavec.",
-    snippetText:`<html lang='cs'>
-<head>
-<title>Ahoj, já jsem název stránky</title>
-</head>
-<body>
-    
+    text: "Prvek <p> definuje odstavec - prostě kus textu. Odstavec začíná vždy na novém řádku a prohlížeče automaticky přidávají ještě nějaké prázdné místo před a za odstavec.",
+    snippetText:`<body>
+ 
 <p>Tady bude třeba věta, řádek nebo i odstavec.</p>
     
 </body>
+
 </html>`,
     },
  ]
@@ -78,7 +86,7 @@ const CssData =  [
     { header: "background-color",
     subHeader: "chceš barevný nadpis?",
     text:"Tato vlastnost nastavuje barevnost celému prvku. Barvy se zadávají pomocí speciálního označení - HEX. Barva se většinou se zadává s křížkem a šestimístným kódem, který je směsicí čísel a písmen a označuje příslušnou hodnotu na barevné škále. Tak třeba pokud zadáš #FF0000 bude výsledkem krásně červená barva. Barevný HEX kód si můžeš vybrat a zkopírovat třeba z této stránky: ",
-    snippetText:`<h1 style="background-color:	#FF69B4;">Růžová</h1>`
+    snippetText:`<h1 style="background-color:#FF69B4;">Růžová</h1>`
     },
 
     { header: "border",
@@ -102,7 +110,15 @@ const Wiki = () => {
           <WikiContentHead />
           <WikiContentNavigation />
           <Button />
-          <WikiContentTabPanel />
+          <WikiContentTabPanel /> 
+          {HtmlUkazka.map((section) => (
+          <HtmlWikiContentSection 
+          key={section.header}
+          header={section.header}
+          subHeader={section.subHeader}
+          text={section.text} 
+          snippetText={section.snippetText}
+          />))}
           {HtmlData.map((section) => (
           <HtmlWikiContentSection 
             key={section.header}
@@ -112,13 +128,13 @@ const Wiki = () => {
             snippetText={section.snippetText}
             />))}
             {CssData.map((section) => (
-              <CssWikiContentSection 
-                  key={section.subHeader}
-                  header={section.header}
-                  subHeader={section.subHeader}
-                  text={section.text} 
-                  snippetText={section.snippetText}
-                />
+          <CssWikiContentSection 
+             key={section.subHeader}
+             header={section.header}
+             subHeader={section.subHeader}
+             text={section.text} 
+             snippetText={section.snippetText}
+                     />
           ))}
         </main>
       </div>
