@@ -1,30 +1,37 @@
-
-
 /* zobrazení hry pouze pro šířky nad 768px */
 @media only screen and (max-width: 768px) {
-
-.game_img {
-  background-image: url("../img/FIN_picture/media_query/responsive_768px_game.svg");
-   }
-  
-}
-
-@media only screen and (max-width: 1020px) {
-
-.game_img{
-  display: none;
+  .game__mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+  .game__mobile-img {
+    width: 50%;
+  }
+  .game__mobile-text {
+    color: #aa236d;
+    font-weight: 700;
+  }
+  .game__display-options {
+    display: none;
+  }
+}
 
-.game {
-  padding-top: 100px;
-}
-.game__title-flex {
-  display: flex;
-  padding: 50px;
-}
-.game__title-flex > .bracket {
-  margin-right: 20px;
-  font-size: 100px;
-  color: #aa236d;
-}
+@media only screen and (min-width: 768px) {
+  .game__mobile {
+    display: none;
+  }
+  .game {
+    padding-top: 100px;
+  }
+  .game__title-flex {
+    display: flex;
+    padding: 50px;
+  }
+  .game__title-flex > .bracket {
+    margin-right: 20px;
+    font-size: 100px;
+    color: #aa236d;
+  }
 }
