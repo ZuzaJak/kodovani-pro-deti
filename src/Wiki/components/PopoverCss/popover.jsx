@@ -6,12 +6,12 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   popover: {
     pointerEvents: 'none',
- 
   },
   paper: {
     padding: theme.spacing(5),
-    width: "50%",
-    backgroundColor: "#aa236d",
+    width: '50%',
+    backgroundColor: '#aa236d',
+    color: 'white',
   },
 }));
 
@@ -37,7 +37,7 @@ export default function MouseOverPopover() {
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
       >
-     <div className="wiki__section-border">Kde se to zobrazí: </div>
+        <span className="wiki__section-where">Kde se to zobrazí: </span>
       </Typography>
       <Popover
         id="mouse-over-popover"
@@ -58,7 +58,9 @@ export default function MouseOverPopover() {
         onClose={handlePopoverClose}
         disableRestoreFocus
       >
-        <Typography>Kód se v této podobě zobrazí na webové stránce. </Typography>
+        <Typography>
+          Kód se v této podobě zobrazí na webové stránce.{' '}
+        </Typography>
       </Popover>
     </div>
   );
