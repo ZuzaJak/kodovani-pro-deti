@@ -37,7 +37,7 @@ const Game4 = () => {
           </Link>
         ) : (
           <a className="reload" href="#" onClick={reload}>
-            Prasátko není na kopci! Klikni TADY pro další pokus!
+            Prasátko není úplně dole! Klikni TADY pro další pokus!
           </a>
         )}
       </h2>
