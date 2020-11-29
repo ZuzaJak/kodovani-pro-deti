@@ -20,7 +20,7 @@ const WikiContentSection = (language) => (props) => {
           </div>
         </div>
         <div className="wiki__section2-item">
-          <div className="wiki__section2-border">
+          <div className="wiki__section3-border">
             <div dangerouslySetInnerHTML={{ __html: props.snippetText }}></div>
           </div>
         </div>
