@@ -2,8 +2,8 @@ import React from 'react';
 import WikiContentHead from './components/WikiContentHead/wiki_head.jsx';
 import { HtmlWikiContentSection,CssWikiContentSection } from './components/WikiContentSection/wiki_section.jsx';
 import WikiContentNavigation from './components/WikiContentNavigation/wiki_navigation.jsx';
-import WikiContentTabPanel from "./components/WikiContentTabPanel/WikiTabPanel.jsx";
 import { Button } from '@material-ui/core';
+import Drawer from "./components/Drawer/Drawer.jsx";
 
 
 const HtmlUkazka = [
@@ -112,12 +112,12 @@ const CssData =  [
 const Wiki = () => {
   return (
    <>
-      <div id="wiki">
+    <div id="wiki">
         <main>
           <WikiContentHead />
           <WikiContentNavigation />
           <Button />
-          <WikiContentTabPanel /> 
+          <Drawer />
           {HtmlUkazka.map((section) => (
           <HtmlWikiContentSection 
           key={section.header}

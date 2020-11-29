@@ -5,6 +5,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 
 const WikiContentSection = (language) => (props) => {
   return (
+    <>
     <div className="wiki__sections">
       <div className="wiki__section1">
         <h2 className="wiki__section1-header">{props.header}</h2>
@@ -26,6 +27,7 @@ const WikiContentSection = (language) => (props) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
