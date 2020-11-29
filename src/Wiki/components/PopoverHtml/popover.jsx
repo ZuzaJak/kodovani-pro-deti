@@ -9,9 +9,9 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(5),
-    width: "50%",
-    backgroundColor: "#aa236d",
-    color: "white",
+    width: '50%',
+    backgroundColor: '#aa236d',
+    color: 'white',
   },
 }));
 
@@ -37,7 +37,7 @@ export default function MouseOverPopover() {
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
       >
-     <div className="wiki__section-border">Kam se to píše: </div>
+        <div className="wiki__section-where">Kam se to píše: </div>
       </Typography>
       <Popover
         id="mouse-over-popover"
@@ -58,7 +58,10 @@ export default function MouseOverPopover() {
         onClose={handlePopoverClose}
         disableRestoreFocus
       >
-        <Typography>Tento kód se píše do tzv. editoru kódu. Existuje jich veliké množství - my doporučujeme Visual Studio Code. </Typography>
+        <Typography>
+          Tento kód se píše do tzv. editoru kódu. Existuje jich veliké množství
+          - my doporučujeme Visual Studio Code.{' '}
+        </Typography>
       </Popover>
     </div>
   );

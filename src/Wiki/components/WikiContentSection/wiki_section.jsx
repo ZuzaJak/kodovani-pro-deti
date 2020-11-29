@@ -23,7 +23,9 @@ const WikiContentSection = (language) => (props) => {
         </div>
         <div className="wiki__section2-item">
           <MouseOverPopoverCss />
-          <div dangerouslySetInnerHTML={{ __html: props.snippetText }}></div>
+          <div className="wiki__section2-border">
+            <div dangerouslySetInnerHTML={{ __html: props.snippetText }}></div>
+          </div>
         </div>
       </div>
     </div>
