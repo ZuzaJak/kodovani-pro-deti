@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import './certificate.css';
 import diplom from '../../img/diplom.svg';
 
 function resizeCanvas(canvas) {
@@ -20,7 +21,7 @@ function draw(context, canvas) {
   resizeCanvas(canvas);
   context.beginPath();
   context.fill();
-  context.drawImage(image, 50, 50);
+  context.drawImage(diplom, 50, 50);
   context.fillText('Text', canvas.width / 2, canvas.height / 2);
   context.save();
 }
@@ -35,14 +36,15 @@ const Certificate = (props) => {
   };
 
   return (
-    <div
-      id="certificate"
-      style={{ display: 'flex', flexDirection: 'column', minHeight: '50vh' }}
-    >
+    <div id="certificate" className="certificate__div">
       <canvas ref={canvasRef} style={{ flex: '1' }}></canvas>
-      <label htmlFor="name">Napiš tvé jméno a příjmení:</label>
-      <input type="text" />
-      <button onClick={render}>Klikni a DIPLOM je tvůj!</button>
+      <label className="cert__label" htmlFor="name">
+        Napiš své jméno a příjmení:
+      </label>
+      <input className="cert__input" type="text" />
+      <button className="cert__btn" onClick={render}>
+        Odešli do diplomu
+      </button>
     </div>
   );
 };
