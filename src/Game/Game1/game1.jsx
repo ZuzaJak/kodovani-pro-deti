@@ -29,7 +29,7 @@ const Game1 = () => {
   return (
     <div id="game1" className="game1">
       <h2 className="game__quest1"
-      style={{height:70, backgroundColor: 'lightGrey', color: "#0d0638"}}
+      style={{height:100, backgroundColor: '#f2f2f2', color: "#0d0638"}}
       >
         {!color ? ('Úkol 1: Obarvi pozadí vesmíru tmavě modrou barvou (přetáhni obdélník se správným kódem na obrázek).'
         ) : color === 'blue' ? (

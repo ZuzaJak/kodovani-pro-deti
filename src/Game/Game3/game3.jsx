@@ -29,7 +29,7 @@ const Game3 = () => {
   return (
     <div id="game3" className="game3">
       <h2 className="game__quest3"
-      style={{height:70, backgroundColor: 'lightGrey', color: "#0d0638"}}>
+      style={{height:100, backgroundColor: '#f2f2f2', color: "#0d0638"}}>
         {!flex ? (
           'Úkol 3: Pomocí vlastnosti justify-content přiměj jednorožce, aby létal před duhou (přetáhni obdélník se správným kódem na obrázek).'
         ) : flex === 'center' ? (

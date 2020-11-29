@@ -29,7 +29,7 @@ const Game4 = () => {
   return (
     <div id="game4" className="game4">
       <h2 className="game__quest3"
-      style={{height:70, backgroundColor: 'lightGrey', color: "#0d0638"}}>
+      style={{height:100, backgroundColor: '#f2f2f2', color: "#0d0638"}}>
       
         {!flex ? (
           'Úkol 4: Pomocí vlastnosti align-items dej prasátko na obrázek úplně dolů (přetáhni obdélník se správným kódem na obrázek prasátka).'

@@ -31,7 +31,7 @@ const Game2 = () => {
   return (
     <div id="game2" className="game2">
       <h2 className="game__quest2"
-      style={{height:70, backgroundColor: 'lightGrey', color: "#0d0638"}}>
+      style={{height:100, backgroundColor: '#f2f2f2', color: "#0d0638"}}>
         {!border ? (
           'Úkol 2: Přidej obrázkům tečkovaný rámeček (přetáhni obdélník se správným kódem na obrázky).'
         ) : border === 'dotted' ? (
