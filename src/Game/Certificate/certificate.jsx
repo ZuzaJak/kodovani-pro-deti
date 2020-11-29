@@ -40,11 +40,6 @@ const Certificate = () => {
 
   return (
     <div id="certificate" className="certificate__div">
-      <canvas
-        className="cert__canvas"
-        ref={canvasRef}
-        style={{ flex: '1' }}
-      ></canvas>
       <label className="cert__label" htmlFor="name">
         Napiš své jméno a příjmení:
       </label>
@@ -52,6 +47,11 @@ const Certificate = () => {
       <button className="cert__btn" onClick={render}>
         Odešli do diplomu
       </button>
+      <canvas
+        className="cert__canvas"
+        ref={canvasRef}
+        style={{ flex: '1' }}
+      ></canvas>
     </div>
   );
 };
