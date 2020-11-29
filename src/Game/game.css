@@ -17,3 +17,11 @@
   font-size: 100px;
   color: #aa236d;
 }
+
+/* 
+
+@media only screen and (max-width:576 px) {
+  .picture_game{
+  background-image: url("../../img/FIN_picture/media_query/responsive_768px_game.svg");
+  }
+}  */
