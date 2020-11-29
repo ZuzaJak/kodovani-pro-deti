@@ -37,7 +37,7 @@ export default function MouseOverPopover() {
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
       >
-        <div className="wiki__section-where">Kde se to zobrazí: </div>
+        <span className="wiki__section-where">Kde se to zobrazí: </span>
       </Typography>
       <Popover
         id="mouse-over-popover"
