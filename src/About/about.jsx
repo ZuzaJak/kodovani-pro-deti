@@ -11,7 +11,7 @@ const About = () => {
           <p className="about__text">
             Projekt {'<kódování pro děti />'} má za cíl jednoduchou a hravou
             formou seznámit děti s tvorbou webu, způsoby, jakými se web tvoří a
-            možnostmi dalšího vzdělávání v tomto oboru. Zdrojů v českém jazyce není nikdy dost, zejména ty, které jsou vhodné i pro menší děti. Nemusíte být druhý Mark Zuckerberg, ale pořád platí, že HTML a CSS jsou základní programovací jazyky a určitě se hodí orientovat se v základech. 
+            možnostmi dalšího vzdělávání v tomto oboru. Zdrojů v českém jazyce není nikdy dost a to zejména ty, které jsou vhodné i pro menší děti. Nemusíte být druhý Mark Zuckerberg, ale pořád platí, že HTML a CSS jsou základní programovací jazyky a určitě se hodí v nich alespoň trochu orientovat.
           </p>
         </div>
       </div>

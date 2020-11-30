@@ -23,17 +23,7 @@
   font-weight: 900;
 
 }
-.btn {
-  color: #ffffff;
-  padding: 9px 15px;
-  border: 1px solid #0d0638;
-  border-radius: 10px;
-  background-color: #0d0638;
-  font-weight: 700;
-  font-size: 15px;
-  cursor: pointer;
-  margin-bottom: 50px;
-}
+
 @keyframes btn-animation {
   to {
     transform: scale(1.1);
