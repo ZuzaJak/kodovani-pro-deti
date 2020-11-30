@@ -11,13 +11,13 @@ const About = () => {
           <p className="about__text">
             Projekt {'<kódování pro děti />'} má za cíl jednoduchou a hravou
             formou seznámit děti s tvorbou webu, způsoby, jakými se web tvoří a
-            možnostmi dalšího vzdělávání v tomto oboru.
+            možnostmi dalšího vzdělávání v tomto oboru. Zdrojů v českém jazyce není nikdy dost, zejména ty, které jsou vhodné i pro menší děti. Nemusíte být druhý Mark Zuckerberg, ale pořád platí, že HTML a CSS jsou základní programovací jazyky a určitě se hodí orientovat se v základech. 
           </p>
         </div>
       </div>
       <div className="about__columns-flex">
         <div className="about__column">
-          <h2>{'>  '} pro děti</h2>
+          <h2 className='about_header'>{'>  '} pro děti</h2>
           <p>
             Taky už tě napadlo co všechno stojí za tím, že si něco v okně
             počítače můžeš přečíst? Zahrát? Napsat? Abys mohl všechny tyto
@@ -26,7 +26,7 @@ const About = () => {
           </p>
         </div>
         <div className="about__column">
-          <h2>{'>  '} pro rodiče</h2>
+          <h2 className='about_header'>{'>  '} pro rodiče</h2>
           <p>
             HTML je základ, je to brána do světa všech ostatních počítačových
             jazyků. Kódování v HTML není těžké, důležité je jen začít a navíc
@@ -36,7 +36,7 @@ const About = () => {
           </p>
         </div>
         <div className="about__column">
-          <h2>{'>  '} pro učitele</h2>
+          <h2 className='about_header'>{'>  '} pro učitele</h2>
           <p>
             Je to jednoduché. Pomocí základních značek v HMTL můžeme vytvářet
             skvělé stránky. CSS je jazyk, který nám pomůže změnit vhled našich

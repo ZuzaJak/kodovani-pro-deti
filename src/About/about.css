@@ -14,6 +14,8 @@
   display: flex;
   flex-direction: column;
 }
+
+
 .about__column {
   background-color: rgba(196, 196, 196, 0.15);
   padding: 20px;
