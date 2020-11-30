@@ -74,14 +74,15 @@ const Game1 = () => {
           </div>
         )}
       </div>
-
-      <img
-        src={space_image}
-        alt="obrázek vesmíru"
-        className={`image ${!!color ? color : ''}`}
-        onDrop={drop}
-        onDragOver={allowDrop}
-      />
+      <div className="game1__background">
+        <img
+          src={space_image}
+          alt="obrázek vesmíru"
+          className={`image ${!!color ? color : ''}`}
+          onDrop={drop}
+          onDragOver={allowDrop}
+        />
+      </div>
     </div>
   );
 };

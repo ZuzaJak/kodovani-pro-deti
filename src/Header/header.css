@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 30px;
+  min-height: 100vh;
 }
 .title__img {
   width: 80%;
@@ -15,44 +16,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 .title__heading {
   font-size: 25px;
   color: #0d0638;
   font-weight: 900;
-
+  margin-bottom: 100px;
 }
-.btn {
-  color: #ffffff;
-  padding: 9px 15px;
-  border: 1px solid #0d0638;
-  border-radius: 10px;
-  background-color: #0d0638;
-  font-weight: 700;
-  font-size: 15px;
-  cursor: pointer;
-  margin-bottom: 50px;
-}
-@keyframes btn-animation {
-  to {
-    transform: scale(1.1);
-  }
-}
-.btn {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.btn:hover,
-.btn:focus,
-.btn:active {
-  animation-name: btn-animation;
-  animation-duration: 0.3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+.header__btn-display {
+  display: none;
 }
 @media only screen and (min-width: 576px) {
   .title__heading {
@@ -60,6 +32,11 @@
   }
   .title__img {
     width: 60%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header__btn-display {
+    display: block;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -72,11 +49,6 @@
   }
   .title {
     flex: 1 1 50%;
-  }
-  .btn {
-    font-size: 20px;
-    padding: 18px 30px;
-    margin: 0;
   }
   .title__heading {
     font-size: 40px;
