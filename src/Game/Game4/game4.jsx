@@ -28,19 +28,35 @@ const Game4 = () => {
 
   return (
     <div id="game4" className="game4">
-      <h2 className="game__quest3"
-      style={{height:100, backgroundColor: '#f2f2f2', color: "#0d0638"}}>
-      
+      <h2
+        className="game__quest3"
+        style={{ height: 100, backgroundColor: '#f2f2f2', color: '#0d0638' }}
+      >
         {!flex ? (
-          'Úkol 4: Pomocí vlastnosti align-items dej prasátko na obrázek úplně dolů (přetáhni obdélník se správným kódem na obrázek prasátka).'
+          <div className="game__quest4-text">
+            <span className="quest-nr"> Úkol 4</span>
+            <span>
+              Pomocí vlastnosti align-items dej prasátko na obrázek úplně dolů
+            </span>
+            <span>
+              (přetáhni obdélník se správným kódem na obrázek prasátka)
+            </span>
+          </div>
         ) : flex === 'end' ? (
-          <Link className="game__next" to="/vyzkousej-to/5"
-            style={{ textDecoration: 'none' }}>
+          <Link
+            className="game__next"
+            to="/vyzkousej-to/5"
+            style={{ textDecoration: 'none' }}
+          >
             Hurá! Povedlo se ti to 😊 Klikni a získáš DIPLOM! 🎓
           </Link>
         ) : (
-          <a className="reload" href="#" onClick={reload}
-            style={{ textDecoration: 'none' }}>
+          <a
+            className="reload"
+            href="#"
+            onClick={reload}
+            style={{ textDecoration: 'none' }}
+          >
             Prasátko není úplně dole! Klikni sem pro další pokus!
           </a>
         )}

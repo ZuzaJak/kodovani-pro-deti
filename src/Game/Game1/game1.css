@@ -1,15 +1,22 @@
 /* game 1 - background color */
 .game__quest1 {
-  width: 65%;
   padding: 20px;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
+}
+.game__quest1-text {
+  display: flex;
+  flex-direction: column;
+}
+.quest-nr {
+  font-weight: 700;
+  color: #aa236d;
 }
 .game1__container {
   width: 90%;

@@ -28,18 +28,34 @@ const Game3 = () => {
 
   return (
     <div id="game3" className="game3">
-      <h2 className="game__quest3"
-      style={{height:100, backgroundColor: '#f2f2f2', color: "#0d0638"}}>
+      <h2
+        className="game__quest3"
+        style={{ height: 100, backgroundColor: '#f2f2f2', color: '#0d0638' }}
+      >
         {!flex ? (
-          'Úkol 3: Pomocí vlastnosti justify-content přiměj jednorožce, aby létal před duhou - uprostřed obrázku (přetáhni obdélník se správným kódem na obrázek).'
+          <div className="game__quest3-text">
+            <span className="quest-nr"> Úkol 3</span>
+            <span>
+              Pomocí vlastnosti justify-content přiměj jednorožce, aby létal
+              před duhou
+            </span>
+            <span> (přetáhni obdélník se správným kódem na obrázek).</span>
+          </div>
         ) : flex === 'center' ? (
-          <Link className="game__next" to="/vyzkousej-to/4"
-           style={{ textDecoration: 'none' }}>
+          <Link
+            className="game__next"
+            to="/vyzkousej-to/4"
+            style={{ textDecoration: 'none' }}
+          >
             Hurá! Povedlo se ti to 😊 Klikni sem pro další úkol!
           </Link>
         ) : (
-          <a className="reload" href="#" onClick={reload}
-            style={{ textDecoration: 'none' }}>
+          <a
+            className="reload"
+            href="#"
+            onClick={reload}
+            style={{ textDecoration: 'none' }}
+          >
             Jednorožec odletěl jinam! Klikni sem pro další pokus!
           </a>
         )}
