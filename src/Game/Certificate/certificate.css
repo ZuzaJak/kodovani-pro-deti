@@ -4,6 +4,12 @@
   align-items: center;
   flex-direction: column;
 }
+.cert__input-box {
+  background-color: rgba(196, 196, 196, 0.3);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
 .cert__label {
   color: #aa236d;
   font-weight: 700;
@@ -17,8 +23,6 @@
   background-color: #aa236d;
   color: white;
   font-weight: 700;
+  border: 1px solid #aa236d;
   border-radius: 5px;
-}
-.cert__canvas {
-  width: 50%;
 }

@@ -23,8 +23,9 @@ function draw(context, canvas) {
   image.onload = () => {
     resizeCanvas(canvas);
     context.beginPath();
-    context.fillText('Text', canvas.width / 2, canvas.height / 2);
-    context.drawImage(image, 0, 0, 600, 600);
+    context.textAlign = 'center';
+    context.fillText('jméno a příjmení', canvas.width / 2, canvas.height / 2);
+    context.drawImage(image, 0, 0, 1280 / 2, 720 / 2);
     context.save();
   };
 }
@@ -40,17 +41,23 @@ const Certificate = () => {
 
   return (
     <div id="certificate" className="certificate__div">
-      <label className="cert__label" htmlFor="name">
-        Napiš své jméno a příjmení:
-      </label>
-      <input className="cert__input" type="text" />
-      <button className="cert__btn" onClick={render}>
-        Odešli do diplomu
-      </button>
+      <div className="cert__input-box">
+        <label className="cert__label" htmlFor="name">
+          Napiš své jméno a příjmení:
+        </label>
+        <input className="cert__input" type="text" />
+        <button className="cert__btn" onClick={render}>
+          Odešli do diplomu
+        </button>
+      </div>
       <canvas
         className="cert__canvas"
         ref={canvasRef}
-        style={{ flex: '1' }}
+        style={{
+          width: 1280,
+          height: 720,
+          flex: 1,
+        }}
       ></canvas>
     </div>
   );
