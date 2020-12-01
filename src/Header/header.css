@@ -22,7 +22,9 @@
   color: #0d0638;
   font-weight: 900;
 }
-
+.header__btn-display {
+  display: none;
+}
 
 @media only screen and (min-width: 576px) {
   .title__heading {
