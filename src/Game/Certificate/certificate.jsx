@@ -25,7 +25,7 @@ function draw(context, canvas) {
     context.beginPath();
     context.textAlign = 'center';
     context.fillText('jméno a příjmení', canvas.width / 2, canvas.height / 2);
-    context.drawImage(image, 0, 0, 1280 / 2, 720 / 2);
+    context.drawImage(image, 1280 / 4, 720 / 8, 1280 / 2, 720 / 2);
     context.save();
   };
 }
