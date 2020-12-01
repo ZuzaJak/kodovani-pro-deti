@@ -1,6 +1,10 @@
 .about__main {
   padding-top: 20px;
 }
+
+.about__text{
+  line-height: 30px;
+}
 .about__title-flex {
   display: flex;
   padding: 20px;

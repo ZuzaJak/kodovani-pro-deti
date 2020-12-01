@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 30px;
+  min-height: 100vh;
 }
 .title__img {
   width: 80%;
@@ -15,13 +16,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 .title__heading {
   font-size: 25px;
   color: #0d0638;
   font-weight: 900;
-
 }
 
 @keyframes btn-animation {
@@ -52,6 +51,11 @@
     width: 60%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header__btn-display {
+    display: block;
+  }
+}
 @media only screen and (min-width: 992px) {
   .home {
     flex-direction: row;
@@ -62,11 +66,6 @@
   }
   .title {
     flex: 1 1 50%;
-  }
-  .btn {
-    font-size: 20px;
-    padding: 18px 30px;
-    margin: 0;
   }
   .title__heading {
     font-size: 40px;

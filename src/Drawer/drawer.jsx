@@ -166,12 +166,12 @@ export default function PersistentDrawerLeft() {
             
           ].map((text, index) => (
             <HashLink to={{ hash: text }}>
-              <ListItem button key={text}>
-                <ListItemIcon>
-                  {index ? <StyleIcon /> : <StyleIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
+            <ListItem button key={text}>
+              <ListItemIcon>
+                {index ? <StyleIcon /> : <StyleIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
             </HashLink>
           ))}
         </List>

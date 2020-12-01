@@ -22,9 +22,8 @@ const Game = (props) => {
           Ahoj! Pokud budeš na počítači, tady se ti zobrazí hra.
         </p>
       </div>
-        {Game}
-      </div>
-  
+      <div className="game__display-options">{Game}</div>
+    </div>
   );
 };
 export default Game;

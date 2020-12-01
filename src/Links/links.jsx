@@ -70,6 +70,14 @@ const Links = () => {
               Erase All Kittens
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
+            <a href="https://easycodesforkids.com/category/html/" target="_blank">
+              Easy codes for kids
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
+            <a href="https://apps.apple.com/us/app/hopster-coding-safari-for-kids/id1348232140" target="_blank">
+               Hopster Coding Safari for Kids
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
           </div>
         </div>
         <img className="links__img" src={links} alt="obrázek" />
