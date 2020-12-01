@@ -33,6 +33,10 @@
 }
 
 /* HAMBURGER MENU */
+.menu {
+  padding-top: 50px;
+  border-radius: 5px;
+}
 .menu__btn {
   background-image: url(../img/menu-icon.svg);
   background-size: cover;
@@ -59,21 +63,18 @@
 }
 .menu__items {
   background-color: #0d0638;
-  padding: 1rem;
-  margin-top: 0.75rem;
+  padding: 10px;
+  margin-top: 10px;
   position: relative;
   border-radius: 10px;
   line-height: 2;
-
 }
-
 .menu--closed .menu__items {
   display: none;
 }
-
 .menu-item {
   display: block;
-  margin: 0.5rem;
+  margin: 10px;
   color: white;
   text-decoration: none;
 }
@@ -81,7 +82,6 @@
   text-decoration: underline;
   transition: 0.4s;
 }
-
 .menu__btn:focus {
   outline: none;
 }
