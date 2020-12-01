@@ -6,14 +6,14 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // color: 'white',
-    // background: '#0d0638',
-    // height: '4rem',
-    // padding: '0 50px',
-    // border: 'none',
-    // borderRadius: 4,
-    // margin: '30px',
-    // fontSize: '1.5rem',
+    color: 'white',
+    background: '#0d0638',
+    height: '4rem',
+    padding: '0 50px',
+    border: 'none',
+    borderRadius: 4,
+    margin: '15px',
+    fontSize: '1.5rem',
   },
 }));
 
@@ -30,7 +30,7 @@ export default function ContainedButtons() {
         classes={{
           root: classes.root,
         }}
-        
+    
       >
         Pojď si zahrát <ArrowForwardIosIcon />
       </Button>
