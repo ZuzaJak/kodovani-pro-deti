@@ -17,7 +17,7 @@ const About = () => {
       </div>
       <div className="about__columns-flex">
         <div className="about__column">
-          <h2 className='about_header'>{'>  '} pro děti</h2>
+          <h2 className="about_header">{'>  '} pro děti</h2>
           <p>
             Taky už tě napadlo co všechno stojí za tím, že si něco v okně
             počítače můžeš přečíst? Zahrát? Napsat? Abys mohl všechny tyto
@@ -26,7 +26,7 @@ const About = () => {
           </p>
         </div>
         <div className="about__column">
-          <h2 className='about_header'>{'>  '} pro rodiče</h2>
+          <h2 className="about_header">{'>  '} pro rodiče</h2>
           <p>
             HTML je základ, je to brána do světa všech ostatních počítačových
             jazyků. Kódování v HTML není těžké, důležité je jen začít a navíc
@@ -36,7 +36,7 @@ const About = () => {
           </p>
         </div>
         <div className="about__column">
-          <h2 className='about_header'>{'>  '} pro učitele</h2>
+          <h2 className="about_header">{'>  '} pro učitele</h2>
           <p>
             Je to jednoduché. Pomocí základních značek v HMTL můžeme vytvářet
             skvělé stránky. CSS je jazyk, který nám pomůže změnit vhled našich

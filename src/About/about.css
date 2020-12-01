@@ -14,12 +14,13 @@
   font-size: 200px;
   color: #aa236d;
 }
+.about__text {
+  font-size: 14px;
+}
 .about__columns-flex {
   display: flex;
   flex-direction: column;
 }
-
-
 .about__column {
   background-color: rgba(196, 196, 196, 0.15);
   padding: 20px;
@@ -47,5 +48,9 @@
   .about__column {
     flex: 1 1 25%;
     margin: 20px;
+  }
+  .about__text {
+    font-size: 14px;
+    line-height: 30px;
   }
 }

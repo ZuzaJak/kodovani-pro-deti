@@ -14,6 +14,11 @@
   font-size: 200px;
   color: #aa236d;
 }
+.links__title-bracket-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .links__list-flex {
   display: flex;
   flex-direction: column;

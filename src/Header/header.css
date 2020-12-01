@@ -23,26 +23,7 @@
   font-weight: 900;
 }
 
-@keyframes btn-animation {
-  to {
-    transform: scale(1.1);
-  }
-}
-.btn {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.btn:hover,
-.btn:focus,
-.btn:active {
-  animation-name: btn-animation;
-  animation-duration: 0.3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
+
 @media only screen and (min-width: 576px) {
   .title__heading {
     font-size: 30px;
