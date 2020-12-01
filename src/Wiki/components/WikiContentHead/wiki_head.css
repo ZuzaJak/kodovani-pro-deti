@@ -26,6 +26,7 @@
 .wiki__title-bracket-flex {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .wiki__title {
   display: flex;
