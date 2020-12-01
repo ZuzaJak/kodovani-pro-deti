@@ -4,7 +4,6 @@ import ChildCare from '@material-ui/icons/ChildCare';
 import SupervisedUserCircle from '@material-ui/icons/SupervisedUserCircle';
 import School from '@material-ui/icons/School';
 
-
 const About = () => {
   return (
     <div id="about" className="about__main">
@@ -15,15 +14,24 @@ const About = () => {
           <p className="about__text">
             Projekt {'<kódování pro děti />'} má za cíl jednoduchou a hravou
             formou seznámit děti s tvorbou webu, způsoby, jakými se web tvoří a
-            možnostmi dalšího vzdělávání v tomto oboru. Zdrojů v českém jazyce není nikdy dost a to zejména ty, které jsou vhodné i pro menší děti. Nemusíte být druhý Mark Zuckerberg, ale pořád platí, že HTML a CSS jsou základní programovací jazyky a určitě se hodí v nich alespoň trochu orientovat.
+            možnostmi dalšího vzdělávání v tomto oboru. Zdrojů v českém jazyce
+            není nikdy dost a to zejména ty, které jsou vhodné i pro menší děti.
+            Nemusíte být druhý Mark Zuckerberg, ale pořád platí, že HTML a CSS
+            jsou základní programovací jazyky a určitě se hodí v nich alespoň
+            trochu orientovat.
           </p>
         </div>
       </div>
       <div className="about__columns-flex">
         <div className="about__column">
-          <ChildCare className="material-icons" style={{fontSize:"50px", color:"#0d0638" }}></ChildCare>
-          <h2 className="about_header">pro děti</h2>
-          <p >
+          <div className="about__column-header-icon">
+            <ChildCare
+              className="material-icons"
+              style={{ fontSize: '50px', color: '#0d0638' }}
+            ></ChildCare>
+            <h2 className="about_header">pro děti</h2>
+          </div>
+          <p>
             Taky už tě napadlo co všechno stojí za tím, že si něco v okně
             počítače můžeš přečíst? Zahrát? Napsat? Abys mohl všechny tyto
             důležité věci dělat, je důležité znát těchto šest tagů. A co je to
@@ -31,8 +39,13 @@ const About = () => {
           </p>
         </div>
         <div className="about__column">
-        <SupervisedUserCircle className="material-icons" style={{fontSize:"50px", color:"#0d0638"}}></SupervisedUserCircle>
-        <h2 className="about_header">pro rodiče</h2>
+          <div className="about__column-header-icon">
+            <SupervisedUserCircle
+              className="material-icons"
+              style={{ fontSize: '50px', color: '#0d0638' }}
+            ></SupervisedUserCircle>
+            <h2 className="about_header">pro rodiče</h2>{' '}
+          </div>
           <p>
             HTML je základ, je to brána do světa všech ostatních počítačových
             jazyků. Kódování v HTML není těžké, důležité je jen začít a navíc
@@ -42,8 +55,13 @@ const About = () => {
           </p>
         </div>
         <div className="about__column">
-        <School className="material-icons" style={{fontSize:"50px", color:"#0d0638"}}></School>
-          <h2 className="about_header">pro učitele</h2>
+          <div className="about__column-header-icon">
+            <School
+              className="material-icons"
+              style={{ fontSize: '50px', color: '#0d0638' }}
+            ></School>
+            <h2 className="about_header">pro učitele</h2>{' '}
+          </div>
           <p>
             Je to jednoduché. Pomocí základních značek v HMTL můžeme vytvářet
             skvělé stránky. CSS je jazyk, který nám pomůže změnit vhled našich

@@ -1,8 +1,7 @@
 .about__main {
   padding-top: 20px;
 }
-
-.about__text{
+.about__text {
   line-height: 30px;
 }
 .about__title-flex {
@@ -27,7 +26,6 @@
   margin: 20px;
   line-height: 30px;
 }
-
 .about__column > p {
   line-height: 30px;
 }
@@ -35,10 +33,12 @@
   font-weight: 700;
   font-size: 24px;
 }
-
-
+.about__column-header-icon {
+  display: flex;
+  align-items: center;
+}
 .material-icons {
-flex-direction: row;
+  margin-right: 30px;
 }
 
 @media only screen and (min-width: 576px) {
@@ -46,7 +46,6 @@ flex-direction: row;
     margin-right: 20px;
     font-size: 150px;
   }
-
 }
 @media only screen and (min-width: 992px) {
   .about__columns-flex {
