@@ -30,6 +30,7 @@
   font-family: 'Press Start 2P', cursive;
   padding-left: 10px;
   font-size: 10px;
+  text-decoration: none;
 }
 
 /* HAMBURGER MENU */
@@ -114,7 +115,7 @@
     font-weight: 500;
   }
   .navbar__left {
-    padding-left: 32px;
+    padding-left: 22px;
     font-size: 16px;
   }
   .menu__btn {

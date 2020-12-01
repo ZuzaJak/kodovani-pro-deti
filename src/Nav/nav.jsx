@@ -21,7 +21,9 @@ const Nav = (props) => {
     <div className="navbar">
       <div className="navbar__left">
         {props.children}
-        {"<kódování pro děti/>"}
+        <Link className="navbar__left" to="/index">
+          {"<kódování pro děti />"}
+          </Link>
       </div>
       <div className="navbar__right">
         <div className={menuOpened ? "menu" : "menu--closed"}>
