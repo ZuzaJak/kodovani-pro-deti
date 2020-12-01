@@ -17,22 +17,32 @@ function resizeCanvas(canvas) {
   return false;
 }
 
+/* const [text, setText] = useState(''); */
+
 function draw(context, canvas) {
   const image = new Image();
   image.src = diplom;
   image.onload = () => {
     resizeCanvas(canvas);
     context.beginPath();
+    context.drawImage(
+      image,
+      canvas.width / 4,
+      canvas.height / 8,
+      1280 / 2,
+      720 / 2,
+    );
     context.textAlign = 'center';
-    context.fillText('jméno a příjmení', canvas.width / 2, canvas.height / 2);
-    context.drawImage(image, 1280 / 4, 720 / 8, 1280 / 2, 720 / 2);
+    context.font = '30px Roboto';
+    context.fillStyle = '#aa236d';
+    context.textAlign = 'center';
+    context.fillText('jméno příjmení', canvas.width / 2.1, canvas.height / 2.1);
     context.save();
   };
 }
 
 const Certificate = () => {
-  const canvasRef = useRef(null);
-
+  const canvasRef = useRef();
   const render = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
@@ -47,7 +57,7 @@ const Certificate = () => {
         </label>
         <input className="cert__input" type="text" />
         <button className="cert__btn" onClick={render}>
-          Odešli do diplomu
+          Odešli a přiletí ti diplom!
         </button>
       </div>
       <canvas
@@ -55,7 +65,7 @@ const Certificate = () => {
         ref={canvasRef}
         style={{
           width: 1280,
-          height: 720,
+          height: 300,
           flex: 1,
         }}
       ></canvas>
