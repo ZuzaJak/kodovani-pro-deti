@@ -50,7 +50,7 @@ const Wiki = () => (
       {HtmlData.map((section) => (
         <HtmlWikiContentSection
           key={section.header}
-          id={section.id ?? ""}
+          // id={section.id ?? ""}
           header={section.header}
           subHeader={section.subHeader}
           text={section.text}
@@ -59,7 +59,7 @@ const Wiki = () => (
       ))}
       {CssData.map((section) => (
         <CssWikiContentSection
-          key={section.subHeader}
+          key={section.header}
           header={section.header}
           subHeader={section.subHeader}
           text={section.text}

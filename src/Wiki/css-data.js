@@ -8,15 +8,15 @@ export const CssData = [
   },
 
   {
-    header: "background-color",
+    header: ".background-color",
     subHeader: "přidáme barvy?",
     text:
       "V základním nastavení je pozadí transparentní tzn. průhledné, to ale není moc zábava. Pokud chceš nastavit barevnost celému prvku, musíš je zadat pomocí speciálního označení, v CSS lze zadat barevnou hodnotu různými způsoby - my využijeme HEX. Barva se zadává s křížkem a šestimístným kódem, který je směsicí čísel a písmen a označuje příslušnou hodnotu na barevné škále. Tak třeba pokud zadáš #FF0000 bude výsledkem krásně červená barva. Barevný HEX kód si můžeš vybrat a zkopírovat třeba z této stránky https://htmlcolorcodes.com/color-chart/flat-design-color-chart/ ",
-    snippetText: `<h1 style="background-color:#ffff1a;">Žlutá</h1>`,
+    snippetText: `<p style="background-color:#ffff1a;">Žlutá</p>`,
   },
 
   {
-    header: "border",
+    header: ".border",
     subHeader: "nastav rámeček",
     text:
       "Tato vlastnost nastavuje barevnost celému prvku. Barvy se zadávají pomocí speciálního označení - HEX. Barva se většinou se zadává s křížkem a šestimístným kódem, který je směsicí čísel a písmen a označuje příslušnou hodnotu na barevné škále. Tak třeba pokud zadáš #FF0000 bude výsledkem krásně červená barva. Barevný HEX kód si můžeš vybrat a zkopírovat třeba z této stránky: ",
@@ -24,7 +24,7 @@ export const CssData = [
   },
 
   {
-    header: "font",
+    header: ".font",
     subHeader: "jak bude vypadat písmo",
     text:
       "Tato vlastnost nastavuje barevnost celému prvku. Barvy se zadávají pomocí speciálního označení - HEX. Barva se většinou se zadává s křížkem a šestimístným kódem, který je směsicí čísel a písmen a označuje příslušnou hodnotu na barevné škále. Tak třeba pokud zadáš #FF0000 bude výsledkem krásně červená barva. Barevný HEX kód si můžeš vybrat a zkopírovat třeba z této stránky: ",
@@ -32,7 +32,7 @@ export const CssData = [
   },
 
   {
-    header: "font-size",
+    header: ".font-size",
     subHeader: "větší nebo menší písmo",
     text:
       "Tato vlastnost nastavuje barevnost celému prvku. Barvy se zadávají pomocí speciálního označení - HEX. Barva se většinou se zadává s křížkem a šestimístným kódem, který je směsicí čísel a písmen a označuje příslušnou hodnotu na barevné škále. Tak třeba pokud zadáš #FF0000 bude výsledkem krásně červená barva. Barevný HEX kód si můžeš vybrat a zkopírovat třeba z této stránky: ",
@@ -41,7 +41,7 @@ export const CssData = [
 
   
   {
-    header: "float",
+    header: ".float",
     subHeader: "jak to zarovnat",
     text:
       "Tato vlastnost nastavuje barevnost celému prvku. Barvy se zadávají pomocí speciálního označení - HEX. Barva se většinou se zadává s křížkem a šestimístným kódem, který je směsicí čísel a písmen a označuje příslušnou hodnotu na barevné škále. Tak třeba pokud zadáš #FF0000 bude výsledkem krásně červená barva. Barevný HEX kód si můžeš vybrat a zkopírovat třeba z této stránky: ",
