@@ -45,7 +45,7 @@ export const HtmlData = [
     header: "<p>",
     subHeader: "jak psát text",
     text:
-      "Prvek <p> definuje odstavec - prostě kus textu. Odstavec začíná vždy na novém řádku a prohlížeče automaticky přidávají ještě nějaké prázdné místo před a za odstavec.",
+      "Prvek <p> definuje odstavec - nebo jednodušeji: prostě kousek textu. Odstavec začíná vždy na novém řádku a prohlížeče automaticky přidávají ještě nějaké prázdné místo před a za tento odstavec. Co to znamená a jak to ovlivňuje vzhled stránky si povíme později. ",
     snippetText: `<body>
 
   <p>Tady bude třeba věta, řádek nebo i odstavec.</p>

@@ -100,6 +100,7 @@ export default function PersistentDrawerLeft() {
     setOpen(false);
   };
 
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -163,7 +164,6 @@ export default function PersistentDrawerLeft() {
             ".font",
             ".font-size",
             ".float",
-            
           ].map((text, index) => (
             <HashLink to={{ hash: text }}>
             <ListItem button key={text}>

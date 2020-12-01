@@ -27,6 +27,7 @@
   margin: 20px;
   line-height: 30px;
 }
+
 .about__column > p {
   line-height: 30px;
 }
@@ -34,11 +35,18 @@
   font-weight: 700;
   font-size: 24px;
 }
+
+
+.material-icons {
+flex-direction: row;
+}
+
 @media only screen and (min-width: 576px) {
   .about__title-flex > .bracket {
     margin-right: 20px;
     font-size: 150px;
   }
+
 }
 @media only screen and (min-width: 992px) {
   .about__columns-flex {
