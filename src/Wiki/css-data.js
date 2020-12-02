@@ -28,7 +28,12 @@ export const CssData = [
     subHeader: "jak bude vypadat písmo",
     text:
       "Tato vlastnost nastavuje barevnost celému prvku. Barvy se zadávají pomocí speciálního označení - HEX. Barva se většinou se zadává s křížkem a šestimístným kódem, který je směsicí čísel a písmen a označuje příslušnou hodnotu na barevné škále. Tak třeba pokud zadáš #FF0000 bude výsledkem krásně červená barva. Barevný HEX kód si můžeš vybrat a zkopírovat třeba z této stránky: ",
-    snippetText: `<p class="dotted">Tečkovaný rámeček.</p>`,
+    snippetText: `<style>
+    p.text {
+      font:28px Arial, sans-serif;
+    }
+    </style>
+    <p class="text">Velikost písma už je 28px a to není žádné tintítko.</p>`,
   },
 
   {

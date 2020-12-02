@@ -50,7 +50,6 @@ const Wiki = () => (
       {HtmlData.map((section) => (
         <HtmlWikiContentSection
           key={section.header}
-          // id={section.id ?? ""}
           header={section.header}
           subHeader={section.subHeader}
           text={section.text}

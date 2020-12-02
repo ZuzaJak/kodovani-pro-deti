@@ -20,12 +20,14 @@ import { HashLink } from "react-router-hash-link";
 
 const drawerWidth = 240;
 
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
   },
   appBar: {
-    
+   
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -33,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     }),
   },
   appBarShift: {
-    
+   
     color: "#0d0638",
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
@@ -44,10 +46,10 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    
+  
   },
   hide: {
-  
+    textDecoration: 'none', 
     display: "none",
   },
   drawer: {
@@ -56,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     flexShrink: 0,
   },
   drawerPaper: {
-    
+  
     width: drawerWidth,
   },
   drawerHeader: {
@@ -69,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-end",
   },
   content: {
-    
+
     flexGrow: 1,
     padding: theme.spacing(3),
     transition: theme.transitions.create("margin", {
@@ -79,6 +81,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: -drawerWidth,
   },
   contentShift: {
+    
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
@@ -86,6 +89,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 0,
   },
 }));
+
 
 export default function PersistentDrawerLeft() {
   const classes = useStyles();
@@ -117,12 +121,14 @@ export default function PersistentDrawerLeft() {
             onClick={handleDrawerOpen}
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
+            
           >
             <MenuIcon />
           </IconButton>
         </Nav>
       </AppBar>
       <Drawer
+
         className={classes.drawer}
         variant="persistent"
         anchor="left"
@@ -130,8 +136,9 @@ export default function PersistentDrawerLeft() {
         classes={{
           paper: classes.drawerPaper,
         }}
+      
       >
-        <div className={classes.drawerHeader}>
+        <div className={classes.drawerHeader} >
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
@@ -141,15 +148,15 @@ export default function PersistentDrawerLeft() {
           </IconButton>
         </div>
         <Divider />
-        <List>
+        <List> 
           {["<HTML>", "<body>", "<h1>", "<p>", "<img>", "<a href>"].map(
             (text, index) => (
-              <HashLink to={{ hash: text }}>
-                <ListItem button key={text}>
+              <HashLink style={{textDecoration:"none"}} to={{ hash: text }}>
+                <ListItem style={{color:'hotPink' }} button key={text}>
                   <ListItemIcon>
                     {index ? <CodeIcon /> : <CodeIcon />}
                   </ListItemIcon>
-                  <ListItemText primary={text} />
+                  <ListItemText primary={text}  />
                 </ListItem>
               </HashLink>
             )
@@ -165,8 +172,8 @@ export default function PersistentDrawerLeft() {
             ".font-size",
             ".float",
           ].map((text, index) => (
-            <HashLink to={{ hash: text }}>
-            <ListItem button key={text}>
+            <HashLink style={{textDecoration:"none"}} to={{ hash: text }}>
+            <ListItem style={{color:'grey' }} button key={text}>
               <ListItemIcon>
                 {index ? <StyleIcon /> : <StyleIcon />}
               </ListItemIcon>

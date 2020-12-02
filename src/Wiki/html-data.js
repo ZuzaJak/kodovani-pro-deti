@@ -1,4 +1,5 @@
 export const HtmlData = [
+
   {
     header: "<HTML>",
     subHeader: "značkovací jazyk",
@@ -8,10 +9,11 @@ export const HtmlData = [
 
   <p>Tagů je opravdu velká spousta - tak jdeme na to!</p>
 
-  </body>
+</body>
 
-  </html>`,
+  `,
   },
+
 
   {
     header: "<body>",
@@ -20,11 +22,11 @@ export const HtmlData = [
       "Body znamená tělo. Tag body je tedy takovým tělem stránky. Do tohoto těla stránky píšeme všechny další tagy. Důležité je, že vše, co je uvnitř tagu body, se zobrazuje na webové stránce. Do tohoto tagu body se píší všechny následující tagy.",
     snippetText: `<body>
 
-  Tady se odehrává všechno důležité.
+    <p>Tady se odehrává všechno důležité.</p>
 
-  </body>
+</body>
 
-  </html>`,
+  `,
   },
 
   {
@@ -34,11 +36,11 @@ export const HtmlData = [
       "Zkratka z anglického heading, nadpis. Tag h1 je nadpis největší, pak jsou ještě nadpisy menší a značí se h2 až h6.",
     snippetText: `<body>
 
-  <h1>Tady bude něco důležitého</h1>
+  <h1>Tady bude důležitý nadpis</h1>
 
-  </body>
+</body>
 
-  </html>`,
+  `,
   },
 
   {
@@ -50,7 +52,7 @@ export const HtmlData = [
 
   <p>Tady bude třeba věta, řádek nebo i odstavec.</p>
 
-  </body>
+</body>
 
   </html>`,
   },
