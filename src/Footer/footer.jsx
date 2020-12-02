@@ -19,14 +19,20 @@ const About = () => {
       className="footer"
     >
       <div className="footer__flex">
-        <img className="icon_footer" src={icon_footer} alt="šipka" />
         <p>Lena Bačíková & Zuzka Jakubčáková</p>
-      <div className={footerOpened ? 'footer-opened' : 'footer-closed'}>
-      <a href='https://www.freepik.com/vectors/abstract'>Abstract vector created by vectorjuice - www.freepik.com</a>
+        <img className="icon_footer" src={icon_footer} alt="šipka" />
+        <div className={footerOpened ? 'footer-opened' : 'footer-closed'}>
+          <a href="https://www.freepik.com/vectors/abstract">
+            Abstract vector created by vectorjuice - www.freepik.com
+          </a>
 
-      <a href='https://www.freepik.com/vectors/business'>Business vector created by vectorjuice - www.freepik.com</a>
+          <a href="https://www.freepik.com/vectors/business">
+            Business vector created by vectorjuice - www.freepik.com
+          </a>
 
-      <a href='https://www.freepik.com/vectors/school'>School vector created by vectorjuice - www.freepik.com</a>
+          <a href="https://www.freepik.com/vectors/school">
+            School vector created by vectorjuice - www.freepik.com
+          </a>
         </div>
       </div>
     </div>

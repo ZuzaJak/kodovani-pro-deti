@@ -1,6 +1,6 @@
 .footer {
   background-color: #aa236d;
-  padding: 10px;
+  padding-top: 20px;
 }
 .footer p {
   display: flex;
@@ -10,7 +10,6 @@
   margin: 0;
 }
 .footer-opened {
-  display: flex;
   justify-content: center;
   padding: 10px;
   color: white;
@@ -20,19 +19,18 @@
 .footer-closed {
   display: none;
 }
-
-.footer__flex{
+.footer__flex {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .icon_footer {
-  align-items: center;
-
+  padding: 10px;
 }
-
 a {
   font-size: 10px;
   align-items: center;
   text-decoration: none;
   color: white;
+  padding: 5px;
 }
