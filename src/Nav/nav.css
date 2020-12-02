@@ -56,11 +56,15 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   transition-duration: 0.3s;
   transition-property: transform;
+
+  
 }
 .menu__btn:hover,
 .menu__btn:focus,
 .menu__btn:active {
   transform: scale(1.1);
+
+  
 }
 .menu__items {
   background-color: #0d0638;

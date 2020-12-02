@@ -15,6 +15,7 @@
 }
 .about__text {
   font-size: 14px;
+ 
 }
 .about__columns-flex {
   display: flex;
@@ -25,6 +26,7 @@
   padding: 20px;
   margin: 20px;
   line-height: 30px;
+  box-shadow: 0 13px 26px rgba(117, 85, 85, 0.10), 0 3px 6px rgba(0,0,0,0.10);
 }
 .about__column > p {
   line-height: 30px;
@@ -36,6 +38,7 @@
 .about__column-header-icon {
   display: flex;
   align-items: center;
+
 }
 .material-icons {
   margin-right: 30px;

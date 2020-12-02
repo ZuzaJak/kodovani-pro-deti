@@ -20,3 +20,19 @@
 .footer-closed {
   display: none;
 }
+
+.footer__flex{
+  display: flex;
+  flex-direction: column;
+}
+.icon_footer {
+  align-items: center;
+
+}
+
+a {
+  font-size: 10px;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
