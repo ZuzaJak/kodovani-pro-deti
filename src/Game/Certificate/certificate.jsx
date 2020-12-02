@@ -34,7 +34,7 @@ function draw(context, canvas) {
     context.font = '30px Roboto';
     context.fillStyle = '#aa236d';
     context.textAlign = 'center';
-    context.fillText(name, canvas.width / 2.1, canvas.height / 2.1);
+    context.fillText({ name }, canvas.width / 2.1, canvas.height / 2.1);
     context.save();
   };
 }
@@ -45,7 +45,7 @@ const Certificate = () => {
   const render = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
-    const name = myNameRef.current;
+    const name = myNameRef.current.focus();
     draw(context, canvas, name);
   };
 
