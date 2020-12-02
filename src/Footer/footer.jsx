@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './footer.css';
 
 const About = () => {
+  const [footerOpened, setFooterOpened] = useState(false);
+
+  const openFooter = () => {
+    setFooterOpened(true);
+  };
+  const closeFooter = () => {
+    setFooterOpened(false);
+  };
   return (
-    <div id="footer" className="footer">
+    <div
+      onMouseOver={openFooter}
+      onMouseLeave={closeFooter}
+      id="footer"
+      className="footer"
+    >
       <p>Lena Bačíková & Zuzka Jakubčáková</p>
+      <div className={footerOpened ? 'footer-opened' : 'footer-closed'}>
+        tady budou odkazy
+      </div>
     </div>
   );
 };

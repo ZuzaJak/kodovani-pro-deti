@@ -9,3 +9,14 @@
   color: white;
   margin: 0;
 }
+.footer-opened {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  overflow: hidden;
+  height: 50px;
+}
+.footer-closed {
+  display: none;
+}
