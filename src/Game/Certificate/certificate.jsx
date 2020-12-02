@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './certificate.css';
 import diplom from '../../img/diplom.svg';
 
@@ -17,7 +17,7 @@ function resizeCanvas(canvas) {
   return false;
 }
 
-function draw(context, canvas) {
+function draw(context, canvas, name) {
   const image = new Image();
   image.src = diplom;
   image.onload = () => {
@@ -34,18 +34,17 @@ function draw(context, canvas) {
     context.font = '30px Roboto';
     context.fillStyle = '#aa236d';
     context.textAlign = 'center';
-    context.fillText({ name }, canvas.width / 2.1, canvas.height / 2.1);
+    context.fillText(name, canvas.width / 2, canvas.height / 2);
     context.save();
   };
 }
 
 const Certificate = () => {
   const canvasRef = useRef();
-  const myNameRef = useRef();
+  const [name, setName] = useState('');
   const render = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
-    const name = myNameRef.current.focus();
     draw(context, canvas, name);
   };
 
@@ -55,7 +54,11 @@ const Certificate = () => {
         <label className="cert__label" htmlFor="name">
           Napiš své jméno a příjmení:
         </label>
-        <input className="cert__input" type="text" ref={myNameRef} />
+        <input
+          className="cert__input"
+          type="text"
+          onChange={(e) => setName(e.target.value)}
+        />
         <button className="cert__btn" onClick={render}>
           Odešli a objeví se tvůj diplom!
         </button>
