@@ -17,8 +17,6 @@ function resizeCanvas(canvas) {
   return false;
 }
 
-/* const [text, setText] = useState(''); */
-
 function draw(context, canvas) {
   const image = new Image();
   image.src = diplom;
@@ -36,17 +34,19 @@ function draw(context, canvas) {
     context.font = '30px Roboto';
     context.fillStyle = '#aa236d';
     context.textAlign = 'center';
-    context.fillText('jméno příjmení', canvas.width / 2.1, canvas.height / 2.1);
+    context.fillText(name, canvas.width / 2.1, canvas.height / 2.1);
     context.save();
   };
 }
 
 const Certificate = () => {
   const canvasRef = useRef();
+  const myNameRef = useRef();
   const render = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
-    draw(context, canvas);
+    const name = myNameRef.current;
+    draw(context, canvas, name);
   };
 
   return (
@@ -55,9 +55,9 @@ const Certificate = () => {
         <label className="cert__label" htmlFor="name">
           Napiš své jméno a příjmení:
         </label>
-        <input className="cert__input" type="text" />
+        <input className="cert__input" type="text" ref={myNameRef} />
         <button className="cert__btn" onClick={render}>
-          Odešli a přiletí ti diplom!
+          Odešli a objeví se tvůj diplom!
         </button>
       </div>
       <canvas
