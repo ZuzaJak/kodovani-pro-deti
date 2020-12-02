@@ -27,7 +27,7 @@
 .icon_footer {
   padding: 10px;
 }
-.footer > a {
+.footer__href {
   font-size: 10px;
   align-items: center;
   text-decoration: none;
