@@ -15,7 +15,16 @@ const WikiContentHead = () => {
               Webové stránky nejsou jen to, co na první pohled vidíme (obrázky,
               barvy, písmena, tlačítka), za každou webovou stránkou se skrývá
               “kód”. Kód je speciální způsob, jakým se tvoří a píší webové
-              stránky. Webové stránky si můžeme prohlížet v takzvaném webovém
+              stránky. Kód píšeme do editoru kódu, takových editorů je velké
+              množství, my doporučujeme například
+              <a
+                className="wiki__vs-link"
+                href="https://code.visualstudio.com/"
+                target="_blank"
+              >
+                Visual Studio Code
+              </a>
+              . Webové stránky si můžeme prohlížet v takzvaném webovém
               prohlížeči. Každý ho jistě zná, je to to “tlačítko pro internet”
               🙂. Webový prohlížeč dokáže přečíst kód, který někdo napsal, a
               vytvoří z něho webovou stránku, která je pěkná a přehledná. V
