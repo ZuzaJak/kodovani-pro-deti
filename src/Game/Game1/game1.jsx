@@ -50,7 +50,7 @@ const Game1 = () => {
           <Link
             className="reload"
             to="/vyzkousej-to/1"
-            onClick={reload}
+            /* onClick={reload} */
             style={{ textDecoration: 'none' }}
           >
             Modrou jsi netrefil/a, klikni 👉 sem pro další pokus!
