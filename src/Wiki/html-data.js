@@ -9,12 +9,8 @@ export const HtmlData = [
 
   <p>Tagů je opravdu velká spousta - tak jdeme na to!</p>
 
-</body>
-
-  `,
+</body>`,
   },
-
-
   {
     header: "<body>",
     subHeader:" jak vytvořit tělo stránky",
@@ -24,9 +20,7 @@ export const HtmlData = [
 
     <p>Tady se odehrává všechno důležité.</p>
 
-</body>
-
-  `,
+</body>`,
   },
 
   {
@@ -38,9 +32,7 @@ export const HtmlData = [
 
   <h1>Tady bude důležitý nadpis</h1>
 
-</body>
-
-  `,
+</body>`,
   },
 
   {
@@ -52,17 +44,30 @@ export const HtmlData = [
 
   <p>Tady bude třeba věta, řádek nebo i odstavec.</p>
 
-</body>
+</body>`,
+  },
 
-  </html>`,
+{
+    header: "<list>",
+    subHeader: "jak si vytvořit seznam ",
+    text:
+      "List je v angličtině vlastně seznam. Je to seskupení informací, které spolu souvisí. Jsou dva základní seznamy: uspořádaný a neuspořádaný seznam, pořádek musí být ale v obou. Tak například je důležité všechny položky seznamu označit tagem <li></li>. Jedná se o anglickou zkratku List Item a znamená: položka seznamu. Pokud chceme vytvořit seznam, který bude mít odrážky, třeba důležitý nákupní seznam, napíše se před položky seznamu <ul>, na konec pak koncový tag a to </ul>:",
+    snippetText: `<body>
+  <ul>
+    <li>Lentilky</li>
+    <li>Gumoví medvídci</li>
+    <li>Čokoláda</li>
+  </ul>
+
+</body>`,
   },
 
   {
     header: "<a href>",
-    subHeader: "jak ",
+    subHeader: "jak kliknout na odkaz",
     text:
       "Odkazy HTML jsou hypertextové odkazy. Můžete kliknout na odkaz a přejít na jiný dokument - odkaz nemusí být jen jiný text, ale může to být obrázek nebo jakýkoliv jiný HTML prvek. Když přejedete myší po odkazu, šipka myši se změní na malou ručičku. Nejdůležitějším atributem prvku <a> je atribut href, který označuje cíl odkazu. Text odkazu je část, která bude viditelná čtenáři stránek.",
-    snippetText: `<body>
+    snippetText:`<body>
 
   <p style="background-color:#FF69B4"><a href="https://www.google.com/">Ahoj, tady klikneš a můžeš další odpovědi hledat v googlu</a></p>
 

@@ -13,12 +13,15 @@ const images = [
     url: wiki_picHTML,
     title: 'HTML',
     width: '50%',
+    text:"<HTML>"
 
   },
   {
     url: wiki_picCSS,
     title: 'CSS',
     width: '50%',
+    text:"CSS",
+
 
   },
  
@@ -31,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     minWidth: 300,
     width: '100%',
+  
   },
   image: {
  
@@ -64,6 +68,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     color: theme.palette.common.white,
+    
   },
   imageSrc: {
     position: 'absolute',
@@ -96,8 +101,11 @@ const useStyles = makeStyles((theme) => ({
     bottom: -2,
     left: 'calc(50% - 9px)',
     transition: theme.transitions.create('opacity'),
+   
   },
 }));
+
+
 
 
 export default function ButtonBases() {
@@ -113,10 +121,13 @@ export default function ButtonBases() {
           focusVisibleClassName={classes.focusVisible}
           style={{
             width: image.width,
-          }}
+                      }}
+    
         >
+          <HashLink style={{textDecoration:"none"}} to={{ hash: image.text }}>
           <span
-            className={classes.imageSrc}
+          
+            className={classes.imageSrc}wehe
             style={{
               backgroundImage: `url(${image.url})`,
             }}
@@ -133,7 +144,9 @@ export default function ButtonBases() {
               <span className={classes.imageMarked} />
             </Typography>
           </span>
+          </HashLink>
         </ButtonBase>
+        
       ))}
     </div>
   );

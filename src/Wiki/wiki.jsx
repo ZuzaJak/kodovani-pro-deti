@@ -5,7 +5,7 @@ import {
   CssWikiContentSection,
 } from "./components/WikiContentSection/wiki_section.jsx";
 import WikiContentNavigation from "./components/WikiContentNavigation/wiki_navigation.jsx";
-import { Button } from "@material-ui/core";
+import { ButtonBase } from "@material-ui/core";
 import { HtmlData } from "./html-data";
 import { CssData } from "./css-data";
 
@@ -37,7 +37,7 @@ const Wiki = () => (
     <main>
       <WikiContentHead />
       <WikiContentNavigation />
-      <Button />
+      <ButtonBase />
       {HtmlUkazka.map((section) => (
         <HtmlWikiContentSection
           key={section.header}

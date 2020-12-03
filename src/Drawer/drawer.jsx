@@ -151,7 +151,7 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List> 
-          {["<HTML>", "<body>", "<h1>", "<p>", "<img>", "<a href>"].map(
+          {["<HTML>", "<body>", "<h1>", "<p>", "<list>", "<a href>"].map(
             (text, index) => (
               <HashLink style={{textDecoration:"none"}} to={{ hash: text }}>
                 <ListItem style={{color:'hotPink' }} button key={text}>
