@@ -49,9 +49,9 @@ const Game1 = () => {
         ) : (
           <button
             className="reload"
-            /*  to="/vyzkousej-to/1" */
+            to="/vyzkousej-to/1"
             onClick={reload}
-            /* style={{ textDecoration: 'none' }} */
+            style={{ textDecoration: 'none' }}
           >
             Modrou jsi netrefil/a, klikni 👉 sem pro další pokus!
           </button>
