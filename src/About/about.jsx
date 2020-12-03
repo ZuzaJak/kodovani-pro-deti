@@ -63,10 +63,10 @@ const About = () => {
             <h2 className="about_header">pro učitele</h2>{' '}
           </div>
           <p>
-            Je to jednoduché. Pomocí základních značek v HMTL můžeme vytvářet
-            skvělé stránky. CSS je jazyk, který nám pomůže změnit vhled našich
-            stránek. Javascript se pak hodí k tomu, aby stránky byly dynamické a
-            interaktivní.
+            Chcete vašim žákům ukázat možnosti tvorby webu? Je to snadné. Pomocí
+            HTML a CSS můžeme poměrně snadno tvořit jednoduché stránky. Tento
+            projekt má za cíl zpřístupnit informace o tomto oboru i mladším
+            dětem, a to jednoduchou, srozumitelnou a hravou formou.
           </p>
         </div>
       </div>
