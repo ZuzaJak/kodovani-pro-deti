@@ -41,6 +41,10 @@ const Links = () => {
               iMYŠLENÍ.cz
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
+            <a href="https://edu.ceskatelevize.cz/predmet/ict" target="_blank">
+              ČT edu - ICT
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
           </div>
           <div className="links__list">
             <h2>více her a zábavy</h2>
@@ -70,12 +74,18 @@ const Links = () => {
               Erase All Kittens
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
-            <a href="https://easycodesforkids.com/category/html/" target="_blank">
+            <a
+              href="https://easycodesforkids.com/category/html/"
+              target="_blank"
+            >
               Easy codes for kids
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
-            <a href="https://apps.apple.com/us/app/hopster-coding-safari-for-kids/id1348232140" target="_blank">
-               Hopster Coding Safari for Kids
+            <a
+              href="https://apps.apple.com/us/app/hopster-coding-safari-for-kids/id1348232140"
+              target="_blank"
+            >
+              Hopster Coding Safari for Kids
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
           </div>
