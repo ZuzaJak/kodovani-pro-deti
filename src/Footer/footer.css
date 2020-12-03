@@ -26,11 +26,14 @@
 }
 .icon_footer {
   padding: 10px;
+
 }
 .footer__href {
   font-size: 10px;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: white;
   padding: 5px;
+  flex-grow: 4;
 }

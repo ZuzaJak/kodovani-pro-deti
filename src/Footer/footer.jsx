@@ -45,6 +45,13 @@ const About = () => {
           >
             School vector created by vectorjuice - www.freepik.com
           </a>
+
+          <a href="https://www.freepik.com/vectors/technology">Technology vector created by pch.vector - www.freepik.com
+          </a>
+
+          <a href="https://www.freepik.com/vectors/baby">Baby vector created by catalyststuff - www.freepik.com
+          </a>
+      
         </div>
       </div>
     </div>

@@ -18,7 +18,8 @@
   align-items: center;
 }
 .title__heading {
-  font-size: 25px;
+  padding-top: 30px;
+  font-size: 30px;
   color: #0d0638;
   font-weight: 900;
 }
