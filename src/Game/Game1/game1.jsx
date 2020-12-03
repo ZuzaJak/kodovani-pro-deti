@@ -47,14 +47,14 @@ const Game1 = () => {
             Hurá! Povedlo se ti to 😊 Klikni sem pro další hru!
           </Link>
         ) : (
-          <Link
+          <button
             className="reload"
-            to="/vyzkousej-to/1"
+            /*  to="/vyzkousej-to/1" */
             onClick={reload}
             style={{ textDecoration: 'none' }}
           >
             Modrou jsi netrefil/a, klikni 👉 sem pro další pokus!
-          </Link>
+          </button>
         )}
       </h2>
       <div className="game1__container">
