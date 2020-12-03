@@ -33,9 +33,7 @@ const About = () => {
           </div>
           <p>
             Taky už tě napadlo co všechno stojí za tím, že si něco v okně
-            počítače můžeš přečíst? Zahrát? Napsat? Abys mohl všechny tyto
-            důležité věci dělat, je důležité znát těchto šest tagů. A co je to
-            tag? ....
+            počítače můžeš přečíst? Zahrát? Napsat? A ne, nemusíš být úplně nejlepší v matematice, kódování je totiž kreativní činnost, u které si taky můžeš užít spoustu zábavy - stejně jako malování na papír.
           </p>
         </div>
         <div className="about__column">
@@ -48,8 +46,8 @@ const About = () => {
           </div>
           <p>
             HTML je základ, je to brána do světa všech ostatních počítačových
-            jazyků. Kódování v HTML není těžké, důležité je jen začít a navíc
-            rozšiřuje mysl a posiluje soustředění. Vytvořit první jednoduchou
+            jazyků. Kódování v HTML není těžké, důležité je jen začít. Navíc
+            rozšiřuje myšlení a posiluje soustředění. Vytvořit první jednoduchou
             stránku trvá přibližně hodinu. A začít můžete právě tady – i se
             svými dětmi.
           </p>
@@ -58,7 +56,8 @@ const About = () => {
           <div className="about__column-header-icon">
             <School
               className="material-icons"
-              style={{ fontSize: '50px', color: '#0d0638' }}
+              style={{ fontSize: '50px', color: '#0d0638',
+              }}
             ></School>
             <h2 className="about_header">pro učitele</h2>{' '}
           </div>

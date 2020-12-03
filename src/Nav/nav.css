@@ -9,6 +9,8 @@
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+
+
 }
 .navbar__right-item {
   display: none;
@@ -19,12 +21,21 @@
   font-size: 15px;
   font-weight: 500;
 }
+
+
+
+
 .navbar__right-item:hover,
 .navbar__right-item:active,
 .navbar__right-item:focus {
+
   text-decoration: underline;
   transition: 0.4s;
+
+ 
 }
+
+
 .navbar__left {
   color: white;
   font-family: 'Press Start 2P', cursive;

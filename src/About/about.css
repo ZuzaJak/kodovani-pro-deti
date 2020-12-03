@@ -42,7 +42,9 @@
 }
 .material-icons {
   margin-right: 30px;
+  
 }
+
 
 @media only screen and (min-width: 576px) {
   .about__title-flex > .bracket {
@@ -64,3 +66,4 @@
     line-height: 30px;
   }
 }
+

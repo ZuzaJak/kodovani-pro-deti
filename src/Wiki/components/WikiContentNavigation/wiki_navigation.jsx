@@ -4,6 +4,8 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 import wiki_picCSS from "./img/wiki_nav_CSS.svg";
 import wiki_picHTML from "./img/wiki_nav_HTML.svg";
+import { HashLink } from "react-router-hash-link";
+
 
 
 const images = [
@@ -11,11 +13,13 @@ const images = [
     url: wiki_picHTML,
     title: 'HTML',
     width: '50%',
+
   },
   {
     url: wiki_picCSS,
     title: 'CSS',
     width: '50%',
+
   },
  
 ];

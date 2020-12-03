@@ -21,7 +21,6 @@ import { HashLink } from "react-router-hash-link";
 const drawerWidth = 240;
 
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -96,6 +95,9 @@ export default function PersistentDrawerLeft() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
+
+
+
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -168,9 +170,8 @@ export default function PersistentDrawerLeft() {
             "CSS",
             ".background-color",
             ".border",
-            ".font",
+            ".font-family",
             ".font-size",
-            ".float",
           ].map((text, index) => (
             <HashLink style={{textDecoration:"none"}} to={{ hash: text }}>
             <ListItem style={{color:'grey' }} button key={text}>
