@@ -22,14 +22,14 @@ const WikiContentHead = () => {
                 href="https://code.visualstudio.com/"
                 target="_blank"
               >
-                Visual Studio Code
+                Visual Studio Code.
               </a>
-              . Webové stránky si můžeme prohlížet v takzvaném webovém
-              prohlížeči. Každý ho jistě zná, je to to “tlačítko pro internet”
-              🙂. Webový prohlížeč dokáže přečíst kód, který někdo napsal, a
-              vytvoří z něho webovou stránku, která je pěkná a přehledná. V
-              následujících částech se dozvíte, jak vypadá takový kód, kterým se
-              píší webové stránky.
+              Webové stránky si můžeme prohlížet v takzvaném webovém prohlížeči.
+              Každý ho jistě zná, je to to “tlačítko pro internet” 🙂. Webový
+              prohlížeč dokáže přečíst kód, který někdo napsal, a vytvoří z něho
+              webovou stránku, která je pěkná a přehledná. V následujících
+              částech se dozvíte, jak vypadá takový kód, kterým se píší webové
+              stránky.
             </p>
           </div>
         </div>
