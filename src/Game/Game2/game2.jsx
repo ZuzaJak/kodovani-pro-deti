@@ -49,14 +49,14 @@ const Game2 = () => {
             Hurá! Povedlo se ti to 😊 Klikni sem pro další hru!
           </Link>
         ) : (
-          <a
+          <Link
             className="reload"
-            href="#"
+            to="/vyzkousej-to/2"
             onClick={reload}
             style={{ textDecoration: 'none' }}
           >
             Tečkovaný rámeček jsi netrefil/a, klikni sem pro další pokus!
-          </a>
+          </Link>
         )}
       </h2>
       <div className="game2__container">

@@ -14,9 +14,11 @@
 }
 .cert__label {
   color: #aa236d;
+  font-size: 24px;
   font-weight: 700;
 }
 .cert__input {
+  padding: 10px;
   border: 2px solid #aa236d;
   margin: 20px;
 }
@@ -27,4 +29,17 @@
   font-weight: 700;
   border: 1px solid #aa236d;
   border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  cursor: pointer;
+}
+.cert__btn:hover,
+.cert__btn:focus,
+.cert__btn:active {
+  transform: scale(1.1);
+  transition: 0.3s;
 }

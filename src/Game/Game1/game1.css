@@ -5,9 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: center;
-  font-size: 16px;
   font-weight: 400;
 }
 .game__quest1-text {

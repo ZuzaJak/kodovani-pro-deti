@@ -22,15 +22,27 @@ const About = () => {
         <p>Lena Bačíková & Zuzka Jakubčáková</p>
         <img className="icon_footer" src={icon_footer} alt="šipka" />
         <div className={footerOpened ? 'footer-opened' : 'footer-closed'}>
-          <a href="https://www.freepik.com/vectors/abstract">
+          <a
+            className="footer__href"
+            href="https://www.freepik.com/vectors/abstract"
+            target="_blank"
+          >
             Abstract vector created by vectorjuice - www.freepik.com
           </a>
 
-          <a href="https://www.freepik.com/vectors/business">
+          <a
+            className="footer__href"
+            href="https://www.freepik.com/vectors/business"
+            target="_blank"
+          >
             Business vector created by vectorjuice - www.freepik.com
           </a>
 
-          <a href="https://www.freepik.com/vectors/school">
+          <a
+            className="footer__href"
+            href="https://www.freepik.com/vectors/school"
+            target="_blank"
+          >
             School vector created by vectorjuice - www.freepik.com
           </a>
 
