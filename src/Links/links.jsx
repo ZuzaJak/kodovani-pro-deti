@@ -22,7 +22,7 @@ const Links = () => {
         <div className="links__lists">
           <div className="links__list">
             <div className="links__icons-flex">
-              <i class="fas fa-graduation-cap"></i>
+              <i class="fas fa-laptop-code"></i>
               <h2>více učení</h2>
             </div>
             <a

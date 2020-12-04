@@ -33,7 +33,9 @@ const About = () => {
           </div>
           <p>
             Taky už tě napadlo co všechno stojí za tím, že si něco v okně
-            počítače můžeš přečíst? Zahrát? Napsat? A ne, nemusíš být úplně nejlepší v matematice, kódování je totiž kreativní činnost, u které si taky můžeš užít spoustu zábavy - stejně jako malování na papír.
+            počítače můžeš přečíst? Zahrát? Napsat? A ne, nemusíš být úplně
+            nejlepší v matematice, kódování je totiž kreativní činnost, u které
+            si taky můžeš užít spoustu zábavy - stejně jako malování na papír.
           </p>
         </div>
         <div className="about__column">
@@ -56,8 +58,7 @@ const About = () => {
           <div className="about__column-header-icon">
             <School
               className="material-icons"
-              style={{ fontSize: '50px', color: '#0d0638',
-              }}
+              style={{ fontSize: '50px', color: '#0d0638' }}
             ></School>
             <h2 className="about_header">pro učitele</h2>{' '}
           </div>
