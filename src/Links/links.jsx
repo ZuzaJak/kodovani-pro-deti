@@ -78,11 +78,11 @@ const Links = () => {
               href="https://geddski.teachable.com/p/flexbox-zombies"
               target="_blank"
             >
-              Flexbox zombies
+              Flexbox Zombies
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
             <a href="https://gridcritters.com/" target="_blank">
-              grid critters
+              Grid Critters
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
             <a
