@@ -75,6 +75,13 @@ const Links = () => {
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
             <a
+              href="https://geddski.teachable.com/p/flexbox-zombies"
+              target="_blank"
+            >
+              Flexbox zombies
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
+            <a
               href="https://easycodesforkids.com/category/html/"
               target="_blank"
             >
