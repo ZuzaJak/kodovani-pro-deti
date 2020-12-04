@@ -21,7 +21,10 @@ const Links = () => {
       <div className="links__list-flex">
         <div className="links__lists">
           <div className="links__list">
-            <h2>více učení</h2>
+            <div className="links__icons-flex">
+              <i class="fas fa-graduation-cap"></i>
+              <h2>více učení</h2>
+            </div>
             <a
               href="https://www.czechitas.cz/cs/co-delame/czechitas-nova-generace"
               target="_blank"
@@ -47,7 +50,10 @@ const Links = () => {
             </a>
           </div>
           <div className="links__list">
-            <h2>více her a zábavy</h2>
+            <div className="links__icons-flex">
+              <i class="fas fa-gamepad"></i>
+              <h2>více her a zábavy</h2>
+            </div>
             <a
               href="https://decko.ceskatelevize.cz/datova-lhota"
               target="_blank"
@@ -69,7 +75,10 @@ const Links = () => {
             </a>
           </div>
           <div className="links__list">
-            <h2>a něco v angličtině</h2>
+            <div className="links__icons-flex">
+              <i class="fas fa-globe"></i>
+              <h2>a něco v angličtině</h2>
+            </div>
             <a href="https://eraseallkittens.com/" target="_blank">
               Erase All Kittens
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />

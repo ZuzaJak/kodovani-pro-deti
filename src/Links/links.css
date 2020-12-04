@@ -46,7 +46,14 @@
   width: 14px;
   height: auto;
 }
-
+.links__icons-flex {
+  display: flex;
+  align-items: center;
+}
+.fas {
+  margin-right: 10px;
+  font-size: 30px;
+}
 @media only screen and (min-width: 992px) {
   .links__list-flex {
     display: flex;
