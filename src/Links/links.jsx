@@ -32,6 +32,10 @@ const Links = () => {
               Czechitas Nová Generace
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
+            <a href="https://cs.khanacademy.org/computing" target="_blank">
+              Khan Academy - Počítačové vědy
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
             <a href="https://witches.fel.cvut.cz/" target="_blank">
               wITches
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
