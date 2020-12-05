@@ -50,18 +50,24 @@ const Certificate = () => {
 
   return (
     <div id="certificate" className="certificate__div">
-      <div className="cert__input-box">
-        <label className="cert__label" htmlFor="name">
-          Napiš své jméno a příjmení:
-        </label>
-        <input
-          className="cert__input"
-          type="text"
-          onChange={(e) => setName(e.target.value)}
-        />
-        <button className="cert__btn" onClick={render}>
-          Odešli a objeví se tvůj diplom!
-        </button>
+      <div className="cert__input-flex">
+        <div className="cert__input-box">
+          <label className="cert__label" htmlFor="name">
+            Napiš své jméno a příjmení:
+          </label>
+          <input
+            className="cert__input"
+            type="text"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <button className="cert__btn" onClick={render}>
+            Odešli a objeví se tvůj diplom!
+          </button>
+        </div>
+        <p className="cert__save">
+          Svůj diplom si pak můžeš stáhnout - klikni pravým tlačítkem myši na
+          diplom a vyber "Uložit obrázek jako..."
+        </p>
       </div>
       <canvas
         className="cert__canvas"

@@ -4,10 +4,18 @@
   align-items: center;
   flex-direction: column;
 }
-.cert__input-box {
+.cert__input-flex {
   background-color: rgba(196, 196, 196, 0.3);
-  padding: 20px;
   width: 100%;
+}
+.cert__save {
+  display: flex;
+  justify-content: center;
+  color: rgba(13, 6, 56, 0.8);
+}
+.cert__input-box {
+  padding: 20px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +40,6 @@
   display: inline-block;
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   transition-duration: 0.3s;
   transition-property: transform;
   cursor: pointer;
@@ -42,4 +49,5 @@
 .cert__btn:active {
   transform: scale(1.1);
   transition: 0.3s;
+  border: 1px solid #aa236d;
 }

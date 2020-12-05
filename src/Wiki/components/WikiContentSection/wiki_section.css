@@ -18,28 +18,24 @@
 .wiki_section1_subHeader {
   font-family: 'Roboto', sans-serif;
 }
-
 .wiki__section2-border {
-
-  border: 1.5px solid rgb(13,6,56);
+  border: 1.5px solid rgb(13, 6, 56);
   margin: 10px;
   padding: 10px;
   height: 100%;
+  display: flex;
 }
-
-
 .wiki__section3-border {
-
-
   margin: 10px;
   padding: 10px;
   height: 100%;
-
-
   border: 1.5px solid;
-  border-image-source: linear-gradient(90deg, rgb(170,35,109), rgb(13,6,56));
+  border-image-source: linear-gradient(
+    90deg,
+    rgb(170, 35, 109),
+    rgb(13, 6, 56)
+  );
   border-image-slice: 1;
-
 }
 .wiki__section-snippet {
   font-family: 'Roboto', sans-serif;
@@ -58,7 +54,7 @@
 .title__img {
   min-width: 400px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .wiki__section1 {
     font-size: 16px;
     padding: 20px;
@@ -69,7 +65,7 @@
     min-height: fit-content;
   }
   .wiki__section2-item {
-    flex: 1 1 50%;
+    width: 50%;
     margin: 20px;
   }
 }
