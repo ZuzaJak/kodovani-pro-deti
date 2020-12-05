@@ -2,12 +2,16 @@
   background-color: #aa236d;
   padding-top: 20px;
 }
-.footer p {
+.footer__authors {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  margin: 0;
+  margin: 5px;
+}
+.footer__czechitas {
+  color: white;
+  margin: 5px;
 }
 .footer-opened {
   justify-content: center;
@@ -25,8 +29,9 @@
   align-items: center;
 }
 .icon_footer {
-  padding: 10px;
-
+  padding: 5px;
+  margin: 0;
+  align-self: flex-start;
 }
 .footer__href {
   font-size: 10px;
