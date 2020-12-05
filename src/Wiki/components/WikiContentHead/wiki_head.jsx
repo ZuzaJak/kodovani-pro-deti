@@ -25,11 +25,11 @@ const WikiContentHead = () => {
                 Visual Studio Code.
               </a>
               Webové stránky si můžeme prohlížet v takzvaném webovém prohlížeči.
-              Každý ho jistě zná, je to to “tlačítko pro internet” 🙂. Webový
-              prohlížeč dokáže přečíst kód, který někdo napsal, a vytvoří z něho
-              webovou stránku, která je pěkná a přehledná. V následujících
-              částech se dozvíte, jak vypadá takový kód, kterým se píší webové
-              stránky.
+              Webových prohlížečů je více druhů, například Google Chrome,
+              Mozilla Firefox, nebo třeba Microsoft Edge. Webový prohlížeč
+              dokáže přečíst kód, který někdo napsal, a vytvoří z něho webovou
+              stránku, která je pěkná a přehledná. V následujících částech se
+              dozvíte, jak vypadá takový kód, kterým se píší webové stránky.
             </p>
           </div>
         </div>
