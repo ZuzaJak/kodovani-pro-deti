@@ -2,17 +2,11 @@
   padding-top: 20px;
 }
 .links__text {
-  width: 90%;
   line-height: 30px;
 }
 .links__title-flex {
   display: flex;
-  padding: 50px;
-}
-.links__title-flex > .bracket {
-  margin-right: 20px;
-  font-size: 200px;
-  color: #aa236d;
+  padding: 30px;
 }
 .links__title-bracket-flex {
   display: flex;
@@ -39,7 +33,6 @@
   width: 80%;
   margin: 30px;
 }
-
 .icon_link_out {
   display: inline-block;
   margin: 0px 8px;

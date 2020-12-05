@@ -7,3 +7,15 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+@media only screen and (max-width: 768px) {
+  .bracket {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bracket {
+    font-size: 200px;
+    color: #aa236d;
+    margin-right: 20px;
+  }
+}

@@ -11,18 +11,10 @@
   justify-content: flex-start;
   margin-bottom: 50px;
 }
-
 .wiki__title-flex {
   display: flex;
+  padding: 30px;
 }
-
-.wiki__title-flex > .bracket {
-  font-family: 'Roboto', sans-serif;
-  font-size: 200px;
-  color: #aa236d;
-  margin-right: 20px;
-}
-
 .wiki__title-bracket-flex {
   display: flex;
   flex-direction: column;
@@ -46,7 +38,6 @@
   color: #aa236d;
   font-weight: 700;
 }
-
 @media only screen and (min-width: 992px) {
   .wiki {
     padding: 100px 50px 50px 50px;
