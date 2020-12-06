@@ -22,9 +22,7 @@ const About = () => {
         <p className="footer__authors">
           ©2020, Lena Bačíková & Zuzka Jakubčáková
         </p>
-        <p className="footer__authors">
-          special thanks to our mentor, Jindřich
-        </p>
+        <p className="footer__authors">děkujeme našemu mentorovi Jindřichovi</p>
         <a
           className="footer__czechitas"
           href="https://www.czechitas.cz/cs/co-delame/digitalni-akademie?gclid=CjwKCAiA_Kz-BRAJEiwAhJNY79ptnVPei7Vrul_F9mrCIZCNMdb8sAXjbKcxl0p0WucNaye0v72g-BoCWxgQAvD_BwE"
@@ -32,7 +30,6 @@ const About = () => {
         >
           Digitální Akademie Web, Czechitas
         </a>
-        <img className="icon_footer" src={icon_footer} alt="šipka" />
         <div className={footerOpened ? 'footer-opened' : 'footer-closed'}>
           <a
             className="footer__href"
