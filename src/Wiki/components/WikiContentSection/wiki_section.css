@@ -7,7 +7,7 @@
 }
 .wiki__section1 {
   font-family: 'Noto Sans', cursive;
-  padding: 70px;
+  padding: 20px;
 }
 .wiki__section2 {
   display: block;
@@ -57,7 +57,7 @@
 @media only screen and (min-width: 992px) {
   .wiki__section1 {
     font-size: 16px;
-    padding: 20px;
+    padding: 30px;
   }
   .wiki__section2 {
     display: flex;

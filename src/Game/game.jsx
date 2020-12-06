@@ -17,10 +17,14 @@ const Game = (props) => {
   return (
     <div id="game" className="game">
       <div className="game__mobile">
+        <div className="game__mobile-text">
+          <p>Ahoj!</p>
+          <p>
+            Pokud budeš na počítači nebo tabletu, můžeš si zde zahrát naši
+            kódovací hru!
+          </p>
+        </div>
         <img className="game__mobile-img" src={game_img} alt="obrazek hry" />
-        <p className="game__mobile-text">
-          Ahoj! Pokud budeš na počítači, tady se ti zobrazí hra.
-        </p>
       </div>
       <div className="game__display-options">{Game}</div>
     </div>
