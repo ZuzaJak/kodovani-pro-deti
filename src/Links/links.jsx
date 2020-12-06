@@ -44,6 +44,10 @@ const Links = () => {
               CODE Rebels
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
+            <a href="https://www.kidscodr.cz/" target="_blank">
+              KidsCodr
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
             <a href="https://www.imysleni.cz/" target="_blank">
               iMYŠLENÍ.cz
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
