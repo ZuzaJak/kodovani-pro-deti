@@ -22,53 +22,22 @@ const About = () => {
         <p className="footer__authors">
           ©2020, Lena Bačíková & Zuzka Jakubčáková
         </p>
-        <p className="footer__authors">děkujeme našemu mentorovi Jindřichovi</p>
-        <a
-          className="footer__czechitas"
-          href="https://www.czechitas.cz/cs/co-delame/digitalni-akademie?gclid=CjwKCAiA_Kz-BRAJEiwAhJNY79ptnVPei7Vrul_F9mrCIZCNMdb8sAXjbKcxl0p0WucNaye0v72g-BoCWxgQAvD_BwE"
-          target="_blank"
-        >
-          Digitální Akademie Web, Czechitas
-        </a>
+        <div className="footer__czechitas">
+          <p> Závěrečný projekt</p>
+          <a
+            href="https://www.czechitas.cz/cs/co-delame/digitalni-akademie?gclid=CjwKCAiA_Kz-BRAJEiwAhJNY79ptnVPei7Vrul_F9mrCIZCNMdb8sAXjbKcxl0p0WucNaye0v72g-BoCWxgQAvD_BwE"
+            target="_blank"
+          >
+            Digitální Akademie Web, Czechitas
+          </a>
+        </div>
         <div className={footerOpened ? 'footer-opened' : 'footer-closed'}>
           <a
             className="footer__href"
-            href="https://www.freepik.com/vectors/abstract"
+            href="https://www.freepik.com"
             target="_blank"
           >
-            Abstract vector created by vectorjuice - www.freepik.com
-          </a>
-          <span>|</span>
-          <a
-            className="footer__href"
-            href="https://www.freepik.com/vectors/business"
-            target="_blank"
-          >
-            Business vector created by vectorjuice - www.freepik.com
-          </a>
-          <span>|</span>
-          <a
-            className="footer__href"
-            href="https://www.freepik.com/vectors/school"
-            target="_blank"
-          >
-            School vector created by vectorjuice - www.freepik.com
-          </a>
-          <span>|</span>
-          <a
-            className="footer__href"
-            href="https://www.freepik.com/vectors/technology"
-            target="_blank"
-          >
-            Technology vector created by pch.vector - www.freepik.com
-          </a>
-          <span>|</span>
-          <a
-            className="footer__href"
-            href="https://www.freepik.com/vectors/baby"
-            target="_blank"
-          >
-            Baby vector created by catalyststuff - www.freepik.com
+            Icons by www.freepik.com
           </a>
         </div>
       </div>

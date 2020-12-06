@@ -12,6 +12,13 @@
 .footer__czechitas {
   color: white;
   margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__czechitas > a {
+  color: white;
+  margin-left: 5px;
 }
 .footer-opened {
   justify-content: center;
@@ -34,7 +41,7 @@
   align-self: flex-start;
 }
 .footer__href {
-  font-size: 10px;
+  font-size: 15px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
