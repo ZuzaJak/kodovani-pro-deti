@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./nav.css";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import './nav.css';
+import { Link } from 'react-router-dom';
 
 const HamMenu = ({ href, onSelect, text }) => {
   return (
@@ -22,11 +22,11 @@ const Nav = (props) => {
       <div className="navbar__left">
         {props.children}
         <Link className="navbar__left" to="/index">
-          {"<kódování pro děti />"}
-          </Link>
+          {'<kódování pro děti />'}
+        </Link>
       </div>
       <div className="navbar__right">
-        <div className={menuOpened ? "menu" : "menu--closed"}>
+        <div className={menuOpened ? 'menu' : 'menu--closed'}>
           <button
             className="menu__btn"
             onClick={() => setMenuOpened(true)}
@@ -40,7 +40,7 @@ const Nav = (props) => {
             />
             <HamMenu
               href="/vyzkousej-to/1"
-              text="vyzkoušej to"
+              text="pojď si zahrát"
               onSelect={handleHamMenu}
             />
             <HamMenu href="/kam-dal" text="kam dál" onSelect={handleHamMenu} />
@@ -52,7 +52,7 @@ const Nav = (props) => {
             kódovací wikipedie
           </Link>
           <Link className="navbar__right-item" to="/vyzkousej-to/1">
-            vyzkoušej to
+            pojď si zahrát
           </Link>
           <Link className="navbar__right-item" to="/kam-dal">
             kam dál
