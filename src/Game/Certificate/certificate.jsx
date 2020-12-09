@@ -34,7 +34,7 @@ function draw(context, canvas, name) {
     context.font = '30px Roboto';
     context.fillStyle = '#aa236d';
     context.textAlign = 'center';
-    context.fillText(name, canvas.width / 2.25, canvas.height / 2.25);
+    context.fillText(name, canvas.width / 2, canvas.height / 2);
     context.save();
   };
 }
