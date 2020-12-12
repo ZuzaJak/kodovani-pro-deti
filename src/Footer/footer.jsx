@@ -19,9 +19,9 @@ const About = () => {
       className="footer"
     >
       <div className="footer__flex">
-        <p className="footer__authors">
-          ©2020, Lena Bačíková & Zuzka Jakubčáková
-        </p>
+        <div className="footer__authors">
+          <p>©2020</p> <p>Lena Bačíková & Zuzka Jakubčáková</p>
+        </div>
         <div className="footer__czechitas">
           <p> Závěrečný projekt</p>
           <a
