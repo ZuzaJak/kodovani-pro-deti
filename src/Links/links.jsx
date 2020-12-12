@@ -140,6 +140,14 @@ const Links = () => {
               CodeCombat
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
+            <a href="https://www.alice.org/" target="_blank">
+              Alice
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
+            <a href="https://mblock.makeblock.com/en-us/" target="_blank">
+              mBlock
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
           </div>
         </div>
         <img className="links__img" src={links} alt="obrázek" />
