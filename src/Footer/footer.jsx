@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './footer.css';
-import icon_footer from '../img/icon/icon_footer.svg';
 
 const About = () => {
   const [footerOpened, setFooterOpened] = useState(false);
