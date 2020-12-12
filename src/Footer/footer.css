@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  margin: 5px;
+  margin: 0;
   flex-direction: column;
 }
 .footer__czechitas {
@@ -36,11 +36,6 @@
 }
 .footer-closed {
   display: none;
-}
-.icon_footer {
-  padding: 5px;
-  margin: 0;
-  align-self: flex-start;
 }
 .footer__href {
   font-size: 15px;
