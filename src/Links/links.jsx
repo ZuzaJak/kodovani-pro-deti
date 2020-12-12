@@ -77,6 +77,10 @@ const Links = () => {
               code.org
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
+            <a href="https://makecode.microbit.org/" target="_blank">
+              MakeCode
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
             <a href="https://flexboxfroggy.com/#cs" target="_blank">
               Flexbox Froggy
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
@@ -87,6 +91,22 @@ const Links = () => {
               <i class="fas fa-globe"></i>
               <h2>a něco v angličtině</h2>
             </div>
+            <a href="https://edu.google.com/code-with-google/" target="_blank">
+              Code with Google
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
+            <a href="https://www.codecademy.com/" target="_blank">
+              Codecademy
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
+            <a href="http://www.stencyl.com/" target="_blank">
+              Stencyl
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
+            <a href="http://www.crunchzilla.com/code-monster" target="_blank">
+              Code Monster from Crunchzilla
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
             <a href="https://eraseallkittens.com/" target="_blank">
               Erase All Kittens
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
@@ -114,6 +134,10 @@ const Links = () => {
               target="_blank"
             >
               Hopster Coding Safari for Kids
+              <img src={icon} className="icon_link_out" alt="ikona odkazu" />
+            </a>
+            <a href="https://codecombat.com/" target="_blank">
+              CodeCombat
               <img src={icon} className="icon_link_out" alt="ikona odkazu" />
             </a>
           </div>
