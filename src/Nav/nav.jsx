@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './nav.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const HamMenu = ({ href, onSelect, text }) => {
   return (
@@ -45,18 +45,34 @@ const Nav = (props) => {
             />
             <HamMenu href="/kam-dal" text="kam dál" onSelect={handleHamMenu} />
           </div>
-          <Link className="navbar__right-item" to="/index">
+          <NavLink
+            className="navbar__right-item"
+            activeClassName="is-active"
+            to="/index"
+          >
             o projektu
-          </Link>
-          <Link className="navbar__right-item" to="/kodovaci-wikipedie">
+          </NavLink>
+          <NavLink
+            className="navbar__right-item"
+            activeClassName="is-active"
+            to="/kodovaci-wikipedie"
+          >
             kódovací wikipedie
-          </Link>
-          <Link className="navbar__right-item" to="/vyzkousej-to/1">
+          </NavLink>
+          <NavLink
+            className="navbar__right-item"
+            activeClassName="is-active"
+            to="/vyzkousej-to/1"
+          >
             pojď si zahrát
-          </Link>
-          <Link className="navbar__right-item" to="/kam-dal">
+          </NavLink>
+          <NavLink
+            className="navbar__right-item"
+            activeClassName="is-active"
+            to="/kam-dal"
+          >
             kam dál
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>
